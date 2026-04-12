@@ -22,7 +22,7 @@ const activeStyle =
   "bg-brand-600 text-white border-brand-600";
 
 const inactiveStyle =
-  "bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-brand-400 hover:text-brand-600 dark:hover:text-brand-400";
+  "bg-white text-gray-600 border-gray-200 hover:border-brand-400 hover:text-brand-600";
 
 interface BlogArticlesProps {
   articles: Article[];

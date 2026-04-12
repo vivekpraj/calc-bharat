@@ -91,17 +91,17 @@ export default function SIPCalculatorClient() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investment" }, { label: "SIP Calculator" }]} />
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">SIP Calculator</h1>
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">Calculate future value of your SIP investments and visualize wealth growth.</p>
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">SIP Calculator</h1>
+      <p className="text-gray-500 text-sm mb-6">Calculate future value of your SIP investments and visualize wealth growth.</p>
 
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="hidden xl:flex flex-col items-center pt-2"><AdSlot slot="sip-left" format="rectangle" /></div>
 
         <div className="flex-1 space-y-6">
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm p-6">
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
             <div className="flex gap-2 mb-5">
               {(["sip", "lumpsum"] as const).map((m) => (
-                <button key={m} onClick={() => setMode(m)} className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${mode === m ? "bg-brand-600 text-white" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-600"}`}>
+                <button key={m} onClick={() => setMode(m)} className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${mode === m ? "bg-brand-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-brand-50 hover:text-brand-600"}`}>
                   {m === "sip" ? "Monthly SIP" : "Lump Sum"}
                 </button>
               ))}
@@ -146,11 +146,11 @@ export default function SIPCalculatorClient() {
             </div>
           </div>
 
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm p-6">
-            <h2 className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-4">FAQ</h2>
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+            <h2 className="text-base font-semibold text-gray-800 mb-4">FAQ</h2>
             <div className="space-y-4 text-sm">
-              <div><h3 className="font-semibold text-gray-800 dark:text-gray-200">What is SIP?</h3><p className="text-gray-500 dark:text-gray-400 mt-1">SIP (Systematic Investment Plan) is a method of investing a fixed amount regularly in mutual funds. It helps build wealth over time through rupee cost averaging and compounding.</p></div>
-              <div><h3 className="font-semibold text-gray-800 dark:text-gray-200">What is Step-up SIP?</h3><p className="text-gray-500 dark:text-gray-400 mt-1">Step-up SIP increases your monthly investment by a fixed percentage each year. This aligns with salary growth and accelerates wealth creation significantly.</p></div>
+              <div><h3 className="font-semibold text-gray-800">What is SIP?</h3><p className="text-gray-500 mt-1">SIP (Systematic Investment Plan) is a method of investing a fixed amount regularly in mutual funds. It helps build wealth over time through rupee cost averaging and compounding.</p></div>
+              <div><h3 className="font-semibold text-gray-800">What is Step-up SIP?</h3><p className="text-gray-500 mt-1">Step-up SIP increases your monthly investment by a fixed percentage each year. This aligns with salary growth and accelerates wealth creation significantly.</p></div>
             </div>
           </div>
         </div>

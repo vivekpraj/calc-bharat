@@ -55,16 +55,16 @@ export default function FDCalculatorClient() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investment" }, { label: "FD / RD Calculator" }]} />
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">FD / RD Calculator</h1>
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">Calculate maturity amount for Fixed Deposits and Recurring Deposits.</p>
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">FD / RD Calculator</h1>
+      <p className="text-gray-500 text-sm mb-6">Calculate maturity amount for Fixed Deposits and Recurring Deposits.</p>
 
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="hidden xl:flex flex-col items-center pt-2"><AdSlot slot="fd-left" format="rectangle" /></div>
         <div className="flex-1 space-y-6">
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm p-6">
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
             <div className="flex gap-2 mb-5">
               {(["fd", "rd"] as const).map((m) => (
-                <button key={m} onClick={() => setFdMode(m)} className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${fdMode === m ? "bg-brand-600 text-white" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-600"}`}>
+                <button key={m} onClick={() => setFdMode(m)} className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${fdMode === m ? "bg-brand-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-brand-50 hover:text-brand-600"}`}>
                   {m === "fd" ? "Fixed Deposit" : "Recurring Deposit"}
                 </button>
               ))}
@@ -81,11 +81,11 @@ export default function FDCalculatorClient() {
             {fdMode === "fd" && (
               <>
                 <div className="mb-4">
-                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-2">Compounding</label>
+                  <label className="text-sm font-medium text-gray-700 block mb-2">Compounding</label>
                   <div className="flex gap-2 flex-wrap">
                     {COMPOUNDING_OPTIONS.map((opt) => (
                       <button key={opt.value} onClick={() => setCompounding(opt.value)}
-                        className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors ${compounding === opt.value ? "bg-brand-600 text-white" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-600"}`}>
+                        className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors ${compounding === opt.value ? "bg-brand-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-brand-50 hover:text-brand-600"}`}>
                         {opt.label}
                       </button>
                     ))}

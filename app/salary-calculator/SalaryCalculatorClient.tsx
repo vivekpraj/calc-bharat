@@ -47,32 +47,32 @@ export default function SalaryCalculatorClient() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Salary & HR" }, { label: "Salary Calculator" }]} />
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">Salary / CTC Calculator</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">Salary / CTC Calculator</h1>
       <div className="mb-2"><LastUpdatedBadge label="New tax regime defaults updated for FY 2025-26" /></div>
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">Break down your CTC and calculate your net monthly in-hand salary.</p>
+      <p className="text-gray-500 text-sm mb-6">Break down your CTC and calculate your net monthly in-hand salary.</p>
 
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="hidden xl:flex flex-col items-center pt-2"><AdSlot slot="salary-left" format="rectangle" /></div>
         <div className="flex-1 space-y-6">
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm p-6">
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
             <SliderInput label="Annual CTC" value={ctc} min={200000} max={10000000} step={50000} prefix="₹" onChange={setCtc} formatDisplay={formatINR} formatMin={formatINRCompact} formatMax={formatINRCompact} />
             <SliderInput label="Basic % of CTC" value={basicPct} min={40} max={60} step={1} unit="%" onChange={setBasicPct} formatDisplay={(v) => `${v}%`} formatMin={(v) => `${v}%`} formatMax={(v) => `${v}%`} />
             <SliderInput label="HRA % of Basic" value={hraPct} min={40} max={50} step={1} unit="%" onChange={setHraPct} formatDisplay={(v) => `${v}%`} formatMin={(v) => `${v}%`} formatMax={(v) => `${v}%`} />
 
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <div>
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-2">PF Contribution</label>
+                <label className="text-sm font-medium text-gray-700 block mb-2">PF Contribution</label>
                 <div className="flex gap-2">
                   {[true, false].map((v) => (
                     <button key={String(v)} onClick={() => setPfApplicable(v)}
-                      className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${pfApplicable === v ? "bg-brand-600 text-white" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-600"}`}>
+                      className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${pfApplicable === v ? "bg-brand-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-brand-50 hover:text-brand-600"}`}>
                       {v ? "Applicable" : "Not Applicable"}
                     </button>
                   ))}
                 </div>
               </div>
               <div>
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-2">State (Professional Tax)</label>
+                <label className="text-sm font-medium text-gray-700 block mb-2">State (Professional Tax)</label>
                 <select value={state} onChange={(e) => setState(e.target.value)}
                   className="text-sm border border-gray-200 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-400">
                   {STATES.map((s) => <option key={s} value={s}>{s}</option>)}

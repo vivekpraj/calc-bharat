@@ -91,8 +91,8 @@ export default function GSTCalculatorClient() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "GST Tools" }, { label: "GST Calculator" }]} />
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">GST Calculator</h1>
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">GST Calculator</h1>
+      <p className="text-gray-500 text-sm mb-6">
         Calculate GST amount with CGST, SGST & IGST breakdown. Supports all GST slabs.
       </p>
 
@@ -105,8 +105,8 @@ export default function GSTCalculatorClient() {
         {/* Main */}
         <div className="flex-1 space-y-6">
           {/* Input Panel */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm p-6">
-            <h2 className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-5">Enter Details</h2>
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+            <h2 className="text-base font-semibold text-gray-800 mb-5">Enter Details</h2>
 
             <SliderInput
               label="Amount"
@@ -123,7 +123,7 @@ export default function GSTCalculatorClient() {
 
             {/* GST Rate Toggle */}
             <div className="mb-5">
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-2">GST Rate</label>
+              <label className="text-sm font-medium text-gray-700 block mb-2">GST Rate</label>
               <div className="flex gap-2 flex-wrap">
                 {GST_RATES.map((r) => (
                   <button
@@ -132,7 +132,7 @@ export default function GSTCalculatorClient() {
                     className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${
                       rate === r
                         ? "bg-brand-600 text-white shadow-sm"
-                        : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-600"
+                        : "bg-gray-100 text-gray-600 hover:bg-brand-50 hover:text-brand-600"
                     }`}
                   >
                     {r}%
@@ -143,7 +143,7 @@ export default function GSTCalculatorClient() {
 
             {/* Calculation Type */}
             <div className="mb-5">
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-2">Calculation Type</label>
+              <label className="text-sm font-medium text-gray-700 block mb-2">Calculation Type</label>
               <div className="flex gap-3">
                 {(["add", "remove"] as const).map((t) => (
                   <label key={t} className="flex items-center gap-2 cursor-pointer">
@@ -153,7 +153,7 @@ export default function GSTCalculatorClient() {
                       onChange={() => setCalcType(t)}
                       className="accent-brand-600"
                     />
-                    <span className="text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-sm text-gray-700">
                       {t === "add" ? "Add GST to amount" : "Remove GST from amount"}
                     </span>
                   </label>
@@ -163,7 +163,7 @@ export default function GSTCalculatorClient() {
 
             {/* Transaction Type */}
             <div className="mb-2">
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-2">Transaction Type</label>
+              <label className="text-sm font-medium text-gray-700 block mb-2">Transaction Type</label>
               <div className="flex gap-3">
                 {(["intra", "inter"] as const).map((t) => (
                   <label key={t} className="flex items-center gap-2 cursor-pointer">
@@ -173,7 +173,7 @@ export default function GSTCalculatorClient() {
                       onChange={() => setTxType(t)}
                       className="accent-brand-600"
                     />
-                    <span className="text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-sm text-gray-700">
                       {t === "intra" ? "Intra-state (CGST + SGST)" : "Inter-state (IGST)"}
                     </span>
                   </label>
@@ -209,20 +209,20 @@ export default function GSTCalculatorClient() {
           </div>
 
           {/* FAQ */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm p-6">
-            <h2 className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-4">Frequently Asked Questions</h2>
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+            <h2 className="text-base font-semibold text-gray-800 mb-4">Frequently Asked Questions</h2>
             <div className="space-y-4 text-sm">
               <div>
-                <h3 className="font-semibold text-gray-800 dark:text-gray-200">What is GST?</h3>
-                <p className="text-gray-500 dark:text-gray-400 mt-1">Goods and Services Tax (GST) is a unified indirect tax levied on the supply of goods and services in India. It replaced multiple indirect taxes and has slabs of 0%, 5%, 12%, 18%, and 28%.</p>
+                <h3 className="font-semibold text-gray-800">What is GST?</h3>
+                <p className="text-gray-500 mt-1">Goods and Services Tax (GST) is a unified indirect tax levied on the supply of goods and services in India. It replaced multiple indirect taxes and has slabs of 0%, 5%, 12%, 18%, and 28%.</p>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800 dark:text-gray-200">What is the difference between CGST, SGST, and IGST?</h3>
-                <p className="text-gray-500 dark:text-gray-400 mt-1">For intra-state transactions, GST is split equally between Central GST (CGST) and State GST (SGST). For inter-state transactions, Integrated GST (IGST) is levied by the central government.</p>
+                <h3 className="font-semibold text-gray-800">What is the difference between CGST, SGST, and IGST?</h3>
+                <p className="text-gray-500 mt-1">For intra-state transactions, GST is split equally between Central GST (CGST) and State GST (SGST). For inter-state transactions, Integrated GST (IGST) is levied by the central government.</p>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800 dark:text-gray-200">How do I calculate GST on an amount?</h3>
-                <p className="text-gray-500 dark:text-gray-400 mt-1">GST Amount = Base Amount × (GST Rate / 100). Total = Base + GST. To reverse-calculate, Base = Total × 100 / (100 + Rate).</p>
+                <h3 className="font-semibold text-gray-800">How do I calculate GST on an amount?</h3>
+                <p className="text-gray-500 mt-1">GST Amount = Base Amount × (GST Rate / 100). Total = Base + GST. To reverse-calculate, Base = Total × 100 / (100 + Rate).</p>
               </div>
             </div>
           </div>

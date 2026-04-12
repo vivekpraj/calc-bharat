@@ -40,16 +40,16 @@ const FOOTER_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0F1020] dark:bg-[#080A10] text-gray-400 dark:text-gray-500 mt-16">
+    <footer className="bg-[#0F1020] text-gray-400 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           {FOOTER_LINKS.map((col) => (
             <div key={col.title}>
-              <h3 className="text-white dark:text-gray-200 font-semibold text-sm mb-4">{col.title}</h3>
+              <h3 className="text-white font-semibold text-sm mb-4">{col.title}</h3>
               <ul className="space-y-2">
                 {col.links.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="text-sm hover:text-white dark:hover:text-gray-200 transition-colors">
+                    <Link href={link.href} className="text-sm hover:text-white transition-colors">
                       {link.label}
                     </Link>
                   </li>

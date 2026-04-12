@@ -23,19 +23,19 @@ function RateComparisonTable({ principal, currentRate, tenureYears }: {
 }) {
   const rates = [7, 7.5, 8, 8.5, 9, 9.5, 10, 11, 12];
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden">
-      <div className="px-4 py-3 border-b border-gray-100 dark:border-gray-800">
-        <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">Rate Comparison Table</h3>
+    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+      <div className="px-4 py-3 border-b border-gray-100">
+        <h3 className="text-sm font-semibold text-gray-700">Rate Comparison Table</h3>
         <p className="text-xs text-gray-400 mt-0.5">Same loan • different interest rates</p>
       </div>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="bg-gray-50 dark:bg-gray-800/60">
-              <th className="px-4 py-2.5 text-left text-xs font-semibold text-gray-500 dark:text-gray-400">Interest Rate</th>
-              <th className="px-4 py-2.5 text-right text-xs font-semibold text-gray-500 dark:text-gray-400">Monthly EMI</th>
-              <th className="px-4 py-2.5 text-right text-xs font-semibold text-gray-500 dark:text-gray-400">Total Interest</th>
-              <th className="px-4 py-2.5 text-right text-xs font-semibold text-gray-500 dark:text-gray-400">Total Payable</th>
+            <tr className="bg-gray-50">
+              <th className="px-4 py-2.5 text-left text-xs font-semibold text-gray-500">Interest Rate</th>
+              <th className="px-4 py-2.5 text-right text-xs font-semibold text-gray-500">Monthly EMI</th>
+              <th className="px-4 py-2.5 text-right text-xs font-semibold text-gray-500">Total Interest</th>
+              <th className="px-4 py-2.5 text-right text-xs font-semibold text-gray-500">Total Payable</th>
             </tr>
           </thead>
           <tbody>
@@ -43,16 +43,16 @@ function RateComparisonTable({ principal, currentRate, tenureYears }: {
               const res = calculateEMI({ principal, annualRate: r, tenureYears });
               const isActive = Math.abs(r - currentRate) < 0.01;
               return (
-                <tr key={r} className={`border-t border-gray-50 dark:border-gray-800 transition-colors ${isActive ? "bg-brand-50 dark:bg-brand-900/30" : "hover:bg-gray-50 dark:hover:bg-gray-800/40"}`}>
+                <tr key={r} className={`border-t border-gray-50 transition-colors ${isActive ? "bg-brand-50" : "hover:bg-gray-50"}`}>
                   <td className="px-4 py-2.5">
-                    <span className={`font-semibold ${isActive ? "text-brand-600 dark:text-brand-400" : "text-gray-700 dark:text-gray-300"}`}>
+                    <span className={`font-semibold ${isActive ? "text-brand-600" : "text-gray-700"}`}>
                       {r}%
-                      {isActive && <span className="ml-1.5 text-[10px] bg-brand-100 dark:bg-brand-800 text-brand-700 dark:text-brand-300 rounded px-1 py-0.5 font-bold">current</span>}
+                      {isActive && <span className="ml-1.5 text-[10px] bg-brand-100 text-brand-700 rounded px-1 py-0.5 font-bold">current</span>}
                     </span>
                   </td>
-                  <td className={`px-4 py-2.5 text-right font-semibold ${isActive ? "text-brand-600 dark:text-brand-400" : "text-gray-900 dark:text-gray-100"}`}>{formatINR(res.emi)}</td>
+                  <td className={`px-4 py-2.5 text-right font-semibold ${isActive ? "text-brand-600" : "text-gray-900"}`}>{formatINR(res.emi)}</td>
                   <td className={`px-4 py-2.5 text-right ${isActive ? "text-red-600" : "text-red-500"}`}>{formatINR(res.totalInterest)}</td>
-                  <td className={`px-4 py-2.5 text-right ${isActive ? "text-gray-900 dark:text-gray-100 font-semibold" : "text-gray-700 dark:text-gray-300"}`}>{formatINR(res.totalPayable)}</td>
+                  <td className={`px-4 py-2.5 text-right ${isActive ? "text-gray-900 font-semibold" : "text-gray-700"}`}>{formatINR(res.totalPayable)}</td>
                 </tr>
               );
             })}
@@ -72,7 +72,7 @@ function ShareButton() {
     });
   };
   return (
-    <button onClick={copy} className="flex items-center gap-2 px-4 py-2.5 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-semibold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+    <button onClick={copy} className="flex items-center gap-2 px-4 py-2.5 border border-gray-200 text-gray-600 text-sm font-semibold rounded-xl hover:bg-gray-50 transition-colors">
       {copied ? <><svg className="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>Copied!</> : <><svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>Share</>}
     </button>
   );
@@ -152,8 +152,8 @@ export default function EMICalculatorClient({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Loan & EMI" }, { label: pageTitle }]} />
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">{pageTitle}</h1>
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">{pageDesc}</p>
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">{pageTitle}</h1>
+      <p className="text-gray-500 text-sm mb-6">{pageDesc}</p>
 
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="hidden xl:flex flex-col items-center pt-2">
@@ -162,7 +162,7 @@ export default function EMICalculatorClient({
 
         <div className="flex-1 space-y-6">
           {/* Inputs */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm p-6">
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
             {/* Loan type tabs */}
             <div className="flex gap-2 flex-wrap mb-5">
               {LOAN_TYPES.map((lt, i) => (
@@ -170,7 +170,7 @@ export default function EMICalculatorClient({
                   key={lt.label}
                   onClick={() => handleLoanType(i)}
                   className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${
-                    loanType === i ? "bg-brand-600 text-white" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-600"
+                    loanType === i ? "bg-brand-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-brand-50 hover:text-brand-600"
                   }`}
                 >
                   {lt.label}
@@ -210,13 +210,13 @@ export default function EMICalculatorClient({
 
             {/* Prepayment result */}
             {result.prepaymentResult && (
-              <div className="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-700/50 rounded-2xl p-4">
-                <h3 className="font-semibold text-emerald-700 dark:text-emerald-400 text-sm mb-3">Prepayment Analysis</h3>
+              <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-4">
+                <h3 className="font-semibold text-emerald-700 text-sm mb-3">Prepayment Analysis</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                  <div><p className="text-xs text-gray-500">Monthly EMI</p><p className="font-bold text-gray-900 dark:text-gray-100">{formatINR(result.prepaymentResult.newEmi)}</p></div>
-                  <div><p className="text-xs text-gray-500">New Total Interest</p><p className="font-bold text-gray-900 dark:text-gray-100">{formatINR(result.prepaymentResult.newTotalInterest)}</p></div>
+                  <div><p className="text-xs text-gray-500">Monthly EMI</p><p className="font-bold text-gray-900">{formatINR(result.prepaymentResult.newEmi)}</p></div>
+                  <div><p className="text-xs text-gray-500">New Total Interest</p><p className="font-bold text-gray-900">{formatINR(result.prepaymentResult.newTotalInterest)}</p></div>
                   <div><p className="text-xs text-gray-500">Interest Saved</p><p className="font-bold text-emerald-700">{formatINR(result.prepaymentResult.interestSaved)}</p></div>
-                  <div><p className="text-xs text-gray-500">New Tenure</p><p className="font-bold text-gray-900 dark:text-gray-100">{result.prepaymentResult.newTenureMonths} months</p></div>
+                  <div><p className="text-xs text-gray-500">New Tenure</p><p className="font-bold text-gray-900">{result.prepaymentResult.newTenureMonths} months</p></div>
                 </div>
               </div>
             )}
@@ -235,12 +235,12 @@ export default function EMICalculatorClient({
           </div>
 
           {/* FAQ */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm p-6">
-            <h2 className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-4">Frequently Asked Questions</h2>
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+            <h2 className="text-base font-semibold text-gray-800 mb-4">Frequently Asked Questions</h2>
             <div className="space-y-4 text-sm">
-              <div><h3 className="font-semibold text-gray-800 dark:text-gray-200">What is EMI?</h3><p className="text-gray-500 dark:text-gray-400 mt-1">EMI (Equated Monthly Instalment) is the fixed monthly payment you make to repay a loan. It includes both principal and interest components.</p></div>
-              <div><h3 className="font-semibold text-gray-800 dark:text-gray-200">What is the formula for EMI calculation?</h3><p className="text-gray-500 dark:text-gray-400 mt-1">EMI = P × r × (1+r)^n / ((1+r)^n − 1), where P = Principal, r = monthly interest rate, n = number of monthly instalments.</p></div>
-              <div><h3 className="font-semibold text-gray-800 dark:text-gray-200">Does prepayment reduce EMI or tenure?</h3><p className="text-gray-500 dark:text-gray-400 mt-1">Prepayment reduces the outstanding principal, which reduces the total interest. Banks generally offer the option to either reduce EMI amount or reduce loan tenure.</p></div>
+              <div><h3 className="font-semibold text-gray-800">What is EMI?</h3><p className="text-gray-500 mt-1">EMI (Equated Monthly Instalment) is the fixed monthly payment you make to repay a loan. It includes both principal and interest components.</p></div>
+              <div><h3 className="font-semibold text-gray-800">What is the formula for EMI calculation?</h3><p className="text-gray-500 mt-1">EMI = P × r × (1+r)^n / ((1+r)^n − 1), where P = Principal, r = monthly interest rate, n = number of monthly instalments.</p></div>
+              <div><h3 className="font-semibold text-gray-800">Does prepayment reduce EMI or tenure?</h3><p className="text-gray-500 mt-1">Prepayment reduces the outstanding principal, which reduces the total interest. Banks generally offer the option to either reduce EMI amount or reduce loan tenure.</p></div>
             </div>
           </div>
         </div>

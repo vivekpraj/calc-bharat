@@ -43,23 +43,23 @@ export default function HRACalculatorClient() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Tax Calculators" }, { label: "HRA Calculator" }]} />
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">HRA Exemption Calculator</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">HRA Exemption Calculator</h1>
       <div className="mb-2"><LastUpdatedBadge label="HRA rules updated for FY 2025-26" /></div>
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">Calculate your HRA tax exemption under Section 10(13A) of the Income Tax Act.</p>
+      <p className="text-gray-500 text-sm mb-6">Calculate your HRA tax exemption under Section 10(13A) of the Income Tax Act.</p>
 
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="hidden xl:flex flex-col items-center pt-2"><AdSlot slot="hra-left" format="rectangle" /></div>
         <div className="flex-1 space-y-6">
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm p-6">
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
             <SliderInput label="Basic Salary (₹/month)" value={basic} min={10000} max={500000} step={1000} prefix="₹" onChange={setBasic} formatDisplay={formatINR} formatMin={formatINR} formatMax={formatINR} />
             <SliderInput label="HRA Received (₹/month)" value={hra} min={5000} max={300000} step={500} prefix="₹" onChange={setHra} formatDisplay={formatINR} formatMin={formatINR} formatMax={formatINR} />
             <SliderInput label="Rent Paid (₹/month)" value={rent} min={5000} max={300000} step={500} prefix="₹" onChange={setRent} formatDisplay={formatINR} formatMin={formatINR} formatMax={formatINR} />
             <div>
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-2">City Type</label>
+              <label className="text-sm font-medium text-gray-700 block mb-2">City Type</label>
               <div className="flex gap-2">
                 {(["metro", "non-metro"] as const).map((c) => (
                   <button key={c} onClick={() => setCity(c)}
-                    className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${city === c ? "bg-brand-600 text-white" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-600"}`}>
+                    className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${city === c ? "bg-brand-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-brand-50 hover:text-brand-600"}`}>
                     {c === "metro" ? "Metro (50%)" : "Non-Metro (40%)"}
                   </button>
                 ))}

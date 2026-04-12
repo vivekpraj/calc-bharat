@@ -57,7 +57,7 @@ export default function AdPopup({ onClose }: AdPopupProps) {
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 
       {/* Modal */}
-      <div className="relative w-full max-w-md bg-white dark:bg-gray-900 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
+      <div className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
         {/* Ad content */}
         <div className={`bg-gradient-to-br ${ad.bg} p-6 text-white`}>
           <div className="flex items-start justify-between gap-3">
@@ -95,7 +95,7 @@ export default function AdPopup({ onClose }: AdPopupProps) {
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between px-5 py-3 bg-gray-50 dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
+        <div className="flex items-center justify-between px-5 py-3 bg-gray-50 border-t border-gray-100">
           <p className="text-xs text-gray-400">
             {seconds > 0 ? (
               <>PDF downloads in <strong className="text-gray-600">{seconds}s</strong> after this ad</>

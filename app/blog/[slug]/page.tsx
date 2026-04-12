@@ -78,7 +78,7 @@ export default function ArticlePage({ params }: PageProps) {
   const calc = relatedCalc[article.slug];
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-[#0F1117]">
+    <main className="min-h-screen bg-gray-50">
       <div className="max-w-2xl mx-auto px-4 py-10">
         {/* Back link */}
         <Link
@@ -98,12 +98,12 @@ export default function ArticlePage({ params }: PageProps) {
         </div>
 
         {/* Title */}
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 leading-tight mb-4">
+        <h1 className="text-3xl font-bold text-gray-900 leading-tight mb-4">
           {article.title}
         </h1>
 
         {/* Meta line */}
-        <p className="text-sm text-gray-500 dark:text-gray-400 mb-8">
+        <p className="text-sm text-gray-500 mb-8">
           {article.readTime}
           {" · "}
           Published: {formatDate(article.publishedAt)}
@@ -117,14 +117,14 @@ export default function ArticlePage({ params }: PageProps) {
           {article.content.map((section, idx) => (
             <div key={idx}>
               {section.heading && (
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mt-8 mb-2">
+                <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                   {section.heading}
                 </h2>
               )}
               {section.paragraphs.map((para, pIdx) => (
                 <p
                   key={pIdx}
-                  className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3"
+                  className="text-gray-700 leading-relaxed mb-3"
                 >
                   {para}
                 </p>
@@ -132,7 +132,7 @@ export default function ArticlePage({ params }: PageProps) {
               {section.bullets && section.bullets.length > 0 && (
                 <ul className="list-disc list-inside mb-4 space-y-1">
                   {section.bullets.map((bullet, bIdx) => (
-                    <li key={bIdx} className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <li key={bIdx} className="text-gray-600 leading-relaxed">
                       {bullet}
                     </li>
                   ))}
@@ -144,13 +144,13 @@ export default function ArticlePage({ params }: PageProps) {
 
         {/* Related calculator card */}
         {calc && (
-          <div className="mt-12 rounded-2xl border border-brand-100 dark:border-brand-800/50 bg-brand-50 dark:bg-brand-900/20 p-6">
-            <p className="text-sm font-semibold text-brand-700 dark:text-brand-400 uppercase tracking-wide mb-2">
+          <div className="mt-12 rounded-2xl border border-brand-100 bg-brand-50 p-6">
+            <p className="text-sm font-semibold text-brand-700 uppercase tracking-wide mb-2">
               Related Tool
             </p>
             <Link
               href={calc.href}
-              className="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400 font-semibold text-lg hover:text-brand-700 dark:hover:text-brand-300 transition-colors"
+              className="inline-flex items-center gap-2 text-brand-600 font-semibold text-lg hover:text-brand-700 transition-colors"
             >
               Try the {calc.label} →
             </Link>

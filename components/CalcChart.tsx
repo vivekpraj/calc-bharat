@@ -90,8 +90,8 @@ export default function CalcChart({ type, data, options, height = 280, title }: 
   };
 
   return (
-    <div className="rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm">
-      {title && <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">{title}</h3>}
+    <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
+      {title && <h3 className="text-sm font-semibold text-gray-700 mb-3">{title}</h3>}
       <div style={{ height: type === "doughnut" ? "auto" : height }}>
         {type === "doughnut" && <Doughnut data={data} options={mergedOptions} />}
         {type === "bar" && <Bar data={data} options={mergedOptions} />}

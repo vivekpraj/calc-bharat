@@ -135,7 +135,7 @@ const TOOL_CATEGORIES = [
 
 export default function HomePage() {
   return (
-    <div className="bg-[#F7F8FC] dark:bg-[#0F1117]">
+    <div className="bg-[#F7F8FC]">
       {/* ── Hero ──────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-[#1A1C78] py-20 px-4 text-center">
         {/* Subtle radial glow */}
@@ -192,8 +192,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Trust badges ──────────────────────────────────────── */}
-      <section className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
-        <div className="max-w-5xl mx-auto px-4 py-4 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500 dark:text-gray-400">
+      <section className="bg-white border-b border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 py-4 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
           {[
             { icon: ShieldCheck, text: "No data stored" },
             { icon: Zap, text: "Instant calculations" },
@@ -215,7 +215,7 @@ export default function HomePage() {
               <span className={`text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border ${cat.categoryBg} ${cat.categoryColor}`}>
                 {cat.category}
               </span>
-              <div className="flex-1 h-px bg-gray-100 dark:bg-gray-800" />
+              <div className="flex-1 h-px bg-gray-100" />
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {cat.tools.map((tool) => (
@@ -245,10 +245,10 @@ export default function HomePage() {
 
       {/* ── SEO content ───────────────────────────────────────── */}
       <section className="max-w-4xl mx-auto px-4 py-14">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
           India&apos;s Most Comprehensive Free Financial Calculator Suite
         </h2>
-        <div className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed space-y-3">
+        <div className="text-gray-500 text-sm leading-relaxed space-y-3">
           <p>
             CalcBharat provides free, accurate financial calculators designed specifically for Indian
             taxpayers, investors, and businesses. From GST calculations with CGST/SGST/IGST breakdowns

@@ -55,16 +55,16 @@ export default function SliderInput({
   return (
     <div className="mb-5">
       <div className="flex items-center justify-between mb-2">
-        <label className="text-sm font-medium text-gray-700 dark:text-gray-300">{label}</label>
+        <label className="text-sm font-medium text-gray-700">{label}</label>
         <div className="flex items-center">
-          {prefix && <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 mr-0.5">{prefix}</span>}
+          {prefix && <span className="text-sm font-semibold text-gray-500 mr-0.5">{prefix}</span>}
           <input
             type="text"
             value={displayValue}
             onChange={handleInput}
-            className="w-28 text-right text-sm font-semibold text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-700/50 rounded-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-brand-400 bg-brand-50 dark:bg-brand-900/20"
+            className="w-28 text-right text-sm font-semibold text-brand-700 border border-brand-200 rounded-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-brand-400 bg-brand-50"
           />
-          {unit && <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 ml-0.5">{unit}</span>}
+          {unit && <span className="text-sm font-semibold text-gray-500 ml-0.5">{unit}</span>}
         </div>
       </div>
       <div className="relative">

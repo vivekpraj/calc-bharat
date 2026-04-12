@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NavigationProgress from "@/components/NavigationProgress";
-import ThemeProvider from "@/components/ThemeProvider";
 import DisclaimerModal from "@/components/DisclaimerModal";
 import Script from "next/script";
 
@@ -28,18 +27,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-IN" className={inter.className} suppressHydrationWarning>
-      <head>
-        {/* Apply theme class before first paint — prevents flash and snap-back */}
-        <script dangerouslySetInnerHTML={{ __html: `(function(){try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}catch(e){}})();` }} />
-      </head>
-      <body className="bg-[#F7F8FC] dark:bg-[#0F1117] min-h-screen flex flex-col">
-        <ThemeProvider>
-          <NavigationProgress />
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </ThemeProvider>
+    <html lang="en-IN" className={inter.className}>
+      <body className="bg-[#F7F8FC] min-h-screen flex flex-col">
+        <NavigationProgress />
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
         <DisclaimerModal />
         {/* Google Analytics 4 — lazyOnload */}
         <Script
