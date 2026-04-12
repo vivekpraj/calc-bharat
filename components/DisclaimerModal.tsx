@@ -48,7 +48,7 @@ export default function DisclaimerModal() {
           </p>
           <ul className="space-y-1.5">
             {[
-              "Tax calculations are based on FY 2025-26 slabs and may not reflect individual deductions.",
+              "Tax calculations are based on FY 2026-27 slabs and may not reflect individual deductions.",
               "EMI and investment projections assume constant rates and do not account for market fluctuations.",
               "Always consult a qualified Chartered Accountant or financial advisor before making decisions.",
             ].map((item) => (

@@ -45,7 +45,7 @@ export default function PPFCalculatorClient() {
               <label className="text-sm font-medium text-gray-700 block mb-2">PPF Interest Rate (% p.a.)</label>
               <input type="number" value={rate} onChange={(e) => setRate(parseFloat(e.target.value) || 7.1)} step={0.1} min={1} max={15}
                 className="w-32 text-sm font-semibold text-brand-700 border border-brand-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-400 bg-brand-50" />
-              <span className="text-xs text-gray-400 ml-2">Current rate: 7.1% p.a. (Q1 2025-26)</span>
+              <span className="text-xs text-gray-400 ml-2">Current rate: 7.1% p.a. (Q1 2026-27)</span>
             </div>
             <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-700">
               PPF has a fixed tenure of <strong>15 years</strong>. Partial withdrawal allowed from Year 7 onwards.

@@ -99,7 +99,7 @@ const TOOL_CATEGORIES = [
     categoryBg: "bg-violet-50 border-violet-200",
     tools: [
       {
-        title: "Income Tax 2025-26",
+        title: "Income Tax 2026-27",
         description: "Old vs New regime comparison. Find what saves more.",
         href: "/income-tax-calculator",
         icon: Calculator,

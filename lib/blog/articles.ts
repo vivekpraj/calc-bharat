@@ -18,7 +18,7 @@ export interface Article {
 export const articles: Article[] = [
   {
     slug: "new-vs-old-tax-regime-2025",
-    title: "New vs Old Tax Regime: Which Should You Choose in FY 2025-26?",
+    title: "New vs Old Tax Regime: Which Should You Choose in FY 2026-27?",
     description:
       "The Union Budget 2025 revised the new tax regime slabs. Here is a clear breakdown to help you decide which regime saves you more tax this financial year.",
     category: "Tax",
@@ -34,7 +34,7 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: "New Tax Regime Slabs for FY 2025-26",
+        heading: "New Tax Regime Slabs for FY 2026-27",
         paragraphs: [
           "The revised new regime slabs are as follows. Income up to ₹4 lakh is nil. From ₹4 lakh to ₹8 lakh it is 5%. From ₹8 lakh to ₹12 lakh it is 10%. From ₹12 lakh to ₹16 lakh it is 15%. From ₹16 lakh to ₹20 lakh it is 20%. From ₹20 lakh to ₹24 lakh it is 25%. Above ₹24 lakh it is 30%.",
           "Additionally, a rebate under Section 87A means that taxpayers with income up to ₹12 lakh have zero tax liability under the new regime (before surcharge and cess).",
@@ -193,7 +193,7 @@ export const articles: Article[] = [
       {
         heading: "GST Registration Thresholds for Service Providers",
         paragraphs: [
-          "As of FY 2025-26, GST registration is mandatory for service providers (including freelancers, consultants, and independent professionals) when their aggregate annual turnover exceeds ₹20 lakh. For freelancers in special category states (such as Manipur, Mizoram, Nagaland, Tripura), the threshold is ₹10 lakh.",
+          "As of FY 2026-27, GST registration is mandatory for service providers (including freelancers, consultants, and independent professionals) when their aggregate annual turnover exceeds ₹20 lakh. For freelancers in special category states (such as Manipur, Mizoram, Nagaland, Tripura), the threshold is ₹10 lakh.",
           "Importantly, this threshold applies to your total revenue from services, not your profit. If you invoice clients for ₹22 lakh in a year but your expenses bring net income to ₹12 lakh, you still need to register because gross turnover crossed ₹20 lakh.",
         ],
       },

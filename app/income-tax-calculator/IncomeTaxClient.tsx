@@ -61,7 +61,7 @@ export default function IncomeTaxClient() {
       const data = await res.json();
       setResult(data);
     } catch {
-      // Fallback: client-side calculation — FY 2025-26 slabs
+      // Fallback: client-side calculation — FY 2026-27 slabs
       const oldStdDeduction = 50000;
       const newStdDeduction = 75000;
       const totalDeductions = section80C + section80D + hraExemption + nps80CCD + otherDeductions + oldStdDeduction;
@@ -78,7 +78,7 @@ export default function IncomeTaxClient() {
         return Math.round(t * 1.04);
       };
       const calcNew = (ti: number) => {
-        // FY 2025-26: 87A rebate up to ₹12L
+        // FY 2026-27: 87A rebate up to ₹12L
         if (ti <= 1200000) return 0;
         let t = 0;
         if (ti > 400000) t += Math.min(ti - 400000, 400000) * 0.05;
@@ -139,9 +139,9 @@ export default function IncomeTaxClient() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Tax Calculators" }, { label: "Income Tax Calculator" }]} />
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">Income Tax Calculator 2025-26</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">Income Tax Calculator 2026-27</h1>
       <div className="mb-2"><LastUpdatedBadge /></div>
-      <p className="text-gray-500 text-sm mb-6">Compare Old vs New tax regime for FY 2025-26 and find which saves you more.</p>
+      <p className="text-gray-500 text-sm mb-6">Compare Old vs New tax regime for FY 2026-27 and find which saves you more.</p>
 
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="hidden xl:flex flex-col items-center pt-2"><AdSlot slot="tax-left" format="rectangle" /></div>
@@ -165,7 +165,7 @@ export default function IncomeTaxClient() {
             </div>
 
             <div className="p-3 bg-blue-50 border border-blue-100 rounded-xl text-xs text-blue-700 mb-4">
-              Standard Deduction auto-applied: ₹50,000 (Old Regime) · ₹75,000 (New Regime) — FY 2025-26.
+              Standard Deduction auto-applied: ₹50,000 (Old Regime) · ₹75,000 (New Regime) — FY 2026-27.
             </div>
 
             <h3 className="text-sm font-semibold text-gray-700 mb-3">Old Regime Deductions</h3>
@@ -232,7 +232,7 @@ export default function IncomeTaxClient() {
             <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
               <h2 className="text-base font-semibold text-gray-800">Tax Slab Reference</h2>
               <span className="text-xs font-medium px-2.5 py-1 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-full">
-                FY 2025-26 &amp; 2026-27 (unchanged)
+                FY 2026-27 (unchanged from 2025-26)
               </span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -299,7 +299,7 @@ export default function IncomeTaxClient() {
             <h2 className="text-base font-semibold text-gray-800 mb-4">FAQ</h2>
             <div className="space-y-4 text-sm">
               <div><h3 className="font-semibold text-gray-800">What is the difference between Old and New tax regime?</h3><p className="text-gray-500 mt-1">The old regime allows deductions under 80C, 80D, HRA, etc. The new regime has lower tax rates but no deductions. If your deductions are large, old regime saves more; otherwise, new regime is better.</p></div>
-              <div><h3 className="font-semibold text-gray-800">Who should choose the New Regime in FY 2025-26?</h3><p className="text-gray-500 mt-1">Taxpayers with income up to ₹12 lakh pay zero tax under the new regime due to the rebate under section 87A (FY 2025-26). Those with minimal deductions generally benefit more from the new regime.</p></div>
+              <div><h3 className="font-semibold text-gray-800">Who should choose the New Regime in FY 2026-27?</h3><p className="text-gray-500 mt-1">Taxpayers with income up to ₹12 lakh pay zero tax under the new regime due to the rebate under section 87A (FY 2026-27). Those with minimal deductions generally benefit more from the new regime.</p></div>
               <div><h3 className="font-semibold text-gray-800">What is included in Section 80C?</h3><p className="text-gray-500 mt-1">80C includes: EPF contributions, PPF, ELSS mutual funds, life insurance premiums, NSC, 5-year FD, and home loan principal repayment. Limit: ₹1.5 lakh.</p></div>
             </div>
           </div>

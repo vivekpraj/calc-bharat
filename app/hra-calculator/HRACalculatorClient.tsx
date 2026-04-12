@@ -44,7 +44,7 @@ export default function HRACalculatorClient() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Tax Calculators" }, { label: "HRA Calculator" }]} />
       <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">HRA Exemption Calculator</h1>
-      <div className="mb-2"><LastUpdatedBadge label="HRA rules updated for FY 2025-26" /></div>
+      <div className="mb-2"><LastUpdatedBadge label="HRA rules updated for FY 2026-27" /></div>
       <p className="text-gray-500 text-sm mb-6">Calculate your HRA tax exemption under Section 10(13A) of the Income Tax Act.</p>
 
       <div className="flex flex-col lg:flex-row gap-6">

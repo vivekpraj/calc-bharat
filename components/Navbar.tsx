@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   {
     label: "Tax Calculators",
     items: [
-      { label: "Income Tax Calculator", href: "/income-tax-calculator", desc: "New vs Old Regime 2025-26" },
+      { label: "Income Tax Calculator", href: "/income-tax-calculator", desc: "New vs Old Regime 2026-27" },
       { label: "HRA Calculator", href: "/hra-calculator", desc: "HRA exemption calculator" },
     ],
   },
