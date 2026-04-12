@@ -64,7 +64,7 @@ export default function HRACalculatorClient() {
                   </button>
                 ))}
               </div>
-              <p className="text-xs text-gray-400 mt-1">Metro cities: Mumbai, Delhi, Kolkata, Chennai</p>
+              <p className="text-xs text-gray-400 mt-1">Metro cities (50%): Mumbai, Delhi, Kolkata, Chennai, Hyderabad, Pune, Bengaluru, Ahmedabad</p>
             </div>
           </div>
 

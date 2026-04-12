@@ -108,12 +108,20 @@ function applyRebate87A(tax: number, taxableIncome: number, regime: string): num
   return tax;
 }
 
-function addSurchargeAndCess(tax: number, grossIncome: number): number {
+function addSurchargeAndCess(tax: number, grossIncome: number, regime: "old" | "new" = "old"): number {
   let surcharge = 0;
-  if (grossIncome > 50000000) surcharge = tax * 0.37;
-  else if (grossIncome > 20000000) surcharge = tax * 0.25;
-  else if (grossIncome > 10000000) surcharge = tax * 0.15;
-  else if (grossIncome > 5000000) surcharge = tax * 0.1;
+  if (regime === "new") {
+    // New regime: surcharge capped at 25% (FY 2026-27)
+    if (grossIncome > 20000000) surcharge = tax * 0.25;
+    else if (grossIncome > 10000000) surcharge = tax * 0.15;
+    else if (grossIncome > 5000000) surcharge = tax * 0.1;
+  } else {
+    // Old regime: up to 37% for income above ₹5Cr
+    if (grossIncome > 50000000) surcharge = tax * 0.37;
+    else if (grossIncome > 20000000) surcharge = tax * 0.25;
+    else if (grossIncome > 10000000) surcharge = tax * 0.15;
+    else if (grossIncome > 5000000) surcharge = tax * 0.1;
+  }
   const cess = (tax + surcharge) * 0.04;
   return tax + surcharge + cess;
 }
@@ -134,10 +142,10 @@ function computeTax(data: TaxRequest): TaxResult {
 
   let rawOld = calcOldRegimeTax(taxableIncomeOld, data.ageGroup);
   rawOld = applyRebate87A(rawOld, taxableIncomeOld, "old");
-  const taxOld = Math.round(addSurchargeAndCess(rawOld, data.grossIncome));
+  const taxOld = Math.round(addSurchargeAndCess(rawOld, data.grossIncome, "old"));
 
   let rawNew = calcNewRegimeTax(taxableIncomeNew);
-  const taxNew = Math.round(addSurchargeAndCess(rawNew, data.grossIncome));
+  const taxNew = Math.round(addSurchargeAndCess(rawNew, data.grossIncome, "new"));
 
   const recommendedRegime = taxOld <= taxNew ? "old" : "new";
   const taxSavings = Math.abs(taxOld - taxNew);
