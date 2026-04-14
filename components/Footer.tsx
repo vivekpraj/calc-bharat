@@ -30,10 +30,10 @@ const FOOTER_LINKS = [
   {
     title: "Company",
     links: [
-      { label: "About", href: "#" },
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Use", href: "#" },
-      { label: "Contact", href: "#" },
+      { label: "About", href: "/about" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Terms of Use", href: "/terms-of-use" },
+      { label: "Blog", href: "/blog" },
     ],
   },
 ];
