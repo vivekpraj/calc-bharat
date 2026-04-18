@@ -15,10 +15,10 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: PageProps): Metadata {
   const article = getArticleBySlug(params.slug);
   if (!article) {
-    return { title: "Article Not Found | CalcBharat" };
+    return { title: "Article Not Found | PaisaBatao" };
   }
   return {
-    title: `${article.title} | CalcBharat`,
+    title: `${article.title} | PaisaBatao`,
     description: article.description,
     openGraph: {
       title: article.title,

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Calculator, Target, ShieldCheck, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About CalcBharat — Free Indian Financial Calculators",
+  title: "About PaisaBatao — Free Indian Financial Calculators",
   description:
-    "CalcBharat provides free, accurate Indian financial calculators for income tax, HRA, EMI, SIP, GST, PPF, and more. Built for every Indian.",
+    "PaisaBatao provides free, accurate Indian financial calculators for income tax, HRA, EMI, SIP, GST, PPF, and more. Built for every Indian.",
 };
 
 const calculators = [
@@ -30,14 +30,14 @@ export default function AboutPage() {
             <div className="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center">
               <Calculator className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">Calc<span className="text-brand-600">Bharat</span></span>
+            <span className="text-xl font-bold text-gray-900">Paisa<span className="text-brand-600">Batao</span></span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
             Free Financial Calculators <br />
             <span className="text-brand-600">Built for Every Indian</span>
           </h1>
           <p className="text-gray-500 text-lg leading-relaxed">
-            CalcBharat is a free platform offering accurate, up-to-date financial calculators
+            PaisaBatao is a free platform offering accurate, up-to-date financial calculators
             for Indian taxpayers, salaried employees, investors, and small business owners.
             No sign-up. No ads cluttering your results. Just fast, reliable calculations.
           </p>
@@ -48,14 +48,14 @@ export default function AboutPage() {
 
         {/* Why we built it */}
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Why We Built CalcBharat</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Why We Built PaisaBatao</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Most Indian financial calculator websites are either outdated, cluttered with ads,
             or use incorrect formulas. When the government updates tax slabs, HRA rules, or
             contribution limits, those sites take months to catch up — if they ever do.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            CalcBharat was built to be different: always updated to the latest Budget,
+            PaisaBatao was built to be different: always updated to the latest Budget,
             formula-accurate, and completely free. Every calculator is reviewed against
             official CBDT guidelines and government notifications.
           </p>
@@ -69,7 +69,7 @@ export default function AboutPage() {
               {
                 icon: <Zap className="w-5 h-5 text-brand-600" />,
                 title: "Always Free",
-                desc: "Every calculator on CalcBharat is free to use, forever. No paywalls, no premium tiers.",
+                desc: "Every calculator on PaisaBatao is free to use, forever. No paywalls, no premium tiers.",
               },
               {
                 icon: <Target className="w-5 h-5 text-brand-600" />,
@@ -117,7 +117,7 @@ export default function AboutPage() {
         <section className="bg-amber-50 border border-amber-200 rounded-xl p-5">
           <h2 className="text-sm font-semibold text-amber-800 mb-2">Important Disclaimer</h2>
           <p className="text-sm text-amber-700 leading-relaxed">
-            All calculators on CalcBharat are for informational and educational purposes only.
+            All calculators on PaisaBatao are for informational and educational purposes only.
             Results should not be treated as financial, tax, or legal advice. Please consult a
             qualified Chartered Accountant or financial advisor before making any financial decisions.
           </p>

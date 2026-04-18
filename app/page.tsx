@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "CalcBharat — Free Indian Financial Calculators",
+  title: "PaisaBatao — Free Indian Financial Calculators",
   description:
     "Free GST, EMI, SIP, Income Tax, HRA, PPF calculators for India. All free, instant, no login required.",
 };
@@ -250,7 +250,7 @@ export default function HomePage() {
         </h2>
         <div className="text-gray-500 text-sm leading-relaxed space-y-3">
           <p>
-            CalcBharat provides free, accurate financial calculators designed specifically for Indian
+            PaisaBatao provides free, accurate financial calculators designed specifically for Indian
             taxpayers, investors, and businesses. From GST calculations with CGST/SGST/IGST breakdowns
             to SIP wealth projections, every tool is tailored to India&apos;s tax laws and financial products.
           </p>

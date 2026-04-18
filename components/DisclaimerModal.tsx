@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { X, AlertTriangle } from "lucide-react";
 
-const SESSION_KEY = "calcbharat_disclaimer_shown";
+const SESSION_KEY = "paisabatao_disclaimer_shown";
 
 export default function DisclaimerModal() {
   const [open, setOpen] = useState(false);
@@ -44,7 +44,7 @@ export default function DisclaimerModal() {
         {/* Body */}
         <div className="px-5 py-4 space-y-3">
           <p className="text-sm text-gray-600 leading-relaxed">
-            The calculators on CalcBharat are provided for <strong className="text-gray-800">educational and informational purposes only</strong>. Results are estimates based on the inputs you provide and current tax/financial rules.
+            The calculators on PaisaBatao are provided for <strong className="text-gray-800">educational and informational purposes only</strong>. Results are estimates based on the inputs you provide and current tax/financial rules.
           </p>
           <ul className="space-y-1.5">
             {[

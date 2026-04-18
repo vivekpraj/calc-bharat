@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | CalcBharat",
+  title: "Terms of Use | PaisaBatao",
   description:
-    "Terms of Use for CalcBharat. Our calculators are for informational purposes only and do not constitute financial or legal advice.",
+    "Terms of Use for PaisaBatao. Our calculators are for informational purposes only and do not constitute financial or legal advice.",
 };
 
 export default function TermsOfUsePage() {
@@ -19,7 +19,7 @@ export default function TermsOfUsePage() {
             <section>
               <h2 className="text-lg font-bold text-gray-900 mb-3">1. Acceptance of Terms</h2>
               <p>
-                By accessing or using CalcBharat (calcbharat.com), you agree to be bound by these
+                By accessing or using PaisaBatao (paisabatao.in), you agree to be bound by these
                 Terms of Use. If you do not agree, please do not use this website.
               </p>
             </section>
@@ -27,7 +27,7 @@ export default function TermsOfUsePage() {
             <section>
               <h2 className="text-lg font-bold text-gray-900 mb-3">2. Informational Purpose Only</h2>
               <p className="mb-3">
-                All calculators, tools, articles, and content on CalcBharat are provided for
+                All calculators, tools, articles, and content on PaisaBatao are provided for
                 <strong> informational and educational purposes only</strong>. They do not
                 constitute financial, tax, investment, or legal advice.
               </p>
@@ -57,7 +57,7 @@ export default function TermsOfUsePage() {
             <section>
               <h2 className="text-lg font-bold text-gray-900 mb-3">4. Limitation of Liability</h2>
               <p>
-                CalcBharat and its owners shall not be liable for any loss, damage, or financial
+                PaisaBatao and its owners shall not be liable for any loss, damage, or financial
                 consequence arising from your use of, or reliance on, any calculator, tool, or
                 content on this website. Use of this website is entirely at your own risk.
               </p>
@@ -66,8 +66,8 @@ export default function TermsOfUsePage() {
             <section>
               <h2 className="text-lg font-bold text-gray-900 mb-3">5. Intellectual Property</h2>
               <p>
-                All content on CalcBharat — including text, design, code, logos, and calculator
-                interfaces — is the property of CalcBharat. You may not copy, reproduce,
+                All content on PaisaBatao — including text, design, code, logos, and calculator
+                interfaces — is the property of PaisaBatao. You may not copy, reproduce,
                 distribute, or create derivative works from any content on this website without
                 our prior written permission.
               </p>
@@ -86,7 +86,7 @@ export default function TermsOfUsePage() {
               <h2 className="text-lg font-bold text-gray-900 mb-3">7. Changes to Terms</h2>
               <p>
                 We reserve the right to modify these Terms of Use at any time. Changes will be
-                posted on this page with an updated date. Continued use of CalcBharat after
+                posted on this page with an updated date. Continued use of PaisaBatao after
                 any changes constitutes your acceptance of the revised terms.
               </p>
             </section>
@@ -104,8 +104,8 @@ export default function TermsOfUsePage() {
               <h2 className="text-lg font-bold text-gray-900 mb-3">9. Contact</h2>
               <p>
                 For any questions regarding these Terms of Use, contact us at{" "}
-                <a href="mailto:hello@calcbharat.com" className="text-brand-600 hover:underline">
-                  hello@calcbharat.com
+                <a href="mailto:hello@paisabatao.in" className="text-brand-600 hover:underline">
+                  hello@paisabatao.in
                 </a>.
               </p>
             </section>

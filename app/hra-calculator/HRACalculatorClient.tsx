@@ -76,7 +76,7 @@ export default function HRACalculatorClient() {
             <BreakdownTable rows={rows} title="HRA Exemption Calculation" />
             <CalcChart type="bar" data={barData} title="Three Conditions — HRA Exemption = Minimum" height={240} />
             <div className="flex justify-end">
-              <PDFExportButton targetId="hra-pdf-export" filename={`calcbharat-hra-${new Date().toISOString().slice(0,10)}.pdf`} title="HRA Calculation" />
+              <PDFExportButton targetId="hra-pdf-export" filename={`paisabatao-hra-${new Date().toISOString().slice(0,10)}.pdf`} title="HRA Calculation" />
             </div>
           </div>
         </div>

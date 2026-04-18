@@ -22,7 +22,7 @@ interface TaxResult {
   takeHomeNew: number;
 }
 
-const WORKER_URL = "https://income-tax.calcbharat.workers.dev";
+const WORKER_URL = "https://income-tax.paisabatao.workers.dev";
 
 export default function IncomeTaxClient() {
   const [grossIncome, setGrossIncome] = useState(800000);
@@ -222,7 +222,7 @@ export default function IncomeTaxClient() {
               )}
 
               <div className="flex justify-end">
-                <PDFExportButton targetId="tax-pdf-export" filename={`calcbharat-income-tax-${new Date().toISOString().slice(0,10)}.pdf`} title="Income Tax Calculation" />
+                <PDFExportButton targetId="tax-pdf-export" filename={`paisabatao-income-tax-${new Date().toISOString().slice(0,10)}.pdf`} title="Income Tax Calculation" />
               </div>
             </div>
           )}

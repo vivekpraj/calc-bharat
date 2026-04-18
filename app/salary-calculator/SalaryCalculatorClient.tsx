@@ -89,7 +89,7 @@ export default function SalaryCalculatorClient() {
             <BreakdownTable rows={rows} title="CTC Breakdown" />
             <CalcChart type="bar" data={barData} title="CTC Component Split" height={200} options={{ scales: { x: { stacked: true }, y: { stacked: true } } }} />
             <div className="flex justify-end">
-              <PDFExportButton targetId="salary-pdf-export" filename={`calcbharat-salary-${new Date().toISOString().slice(0,10)}.pdf`} title="Salary Breakdown" />
+              <PDFExportButton targetId="salary-pdf-export" filename={`paisabatao-salary-${new Date().toISOString().slice(0,10)}.pdf`} title="Salary Breakdown" />
             </div>
           </div>
         </div>

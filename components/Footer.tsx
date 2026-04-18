@@ -63,10 +63,10 @@ export default function Footer() {
             <div className="w-7 h-7 bg-brand-600 rounded-lg flex items-center justify-center">
               <Calculator className="w-3.5 h-3.5 text-white" />
             </div>
-            <span className="font-bold text-white">Calc<span className="text-accent-400">Bharat</span></span>
+            <span className="font-bold text-white">Paisa<span className="text-accent-400">Batao</span></span>
           </div>
           <p className="text-xs text-center">
-            © {new Date().getFullYear()} CalcBharat. Free Indian Financial Calculators. For reference only — not financial advice.
+            © {new Date().getFullYear()} PaisaBatao. Free Indian Financial Calculators. For reference only — not financial advice.
           </p>
         </div>
       </div>

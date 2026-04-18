@@ -229,7 +229,7 @@ function InvoicePreview({ data, interState }: { data: InvoiceData; interState: b
       </div>
 
       <div className="mt-6 pt-4 border-t border-gray-200 text-center text-gray-400 text-xs">
-        Generated with CalcBharat.com — Free GST Invoice Generator
+        Generated with PaisaBatao.com — Free GST Invoice Generator
       </div>
     </div>
   );

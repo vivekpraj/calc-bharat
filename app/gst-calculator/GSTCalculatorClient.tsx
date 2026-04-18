@@ -202,7 +202,7 @@ export default function GSTCalculatorClient() {
               <ShareButton />
               <PDFExportButton
                 targetId="gst-pdf-export"
-                filename={`calcbharat-gst-${new Date().toISOString().slice(0, 10)}.pdf`}
+                filename={`paisabatao-gst-${new Date().toISOString().slice(0, 10)}.pdf`}
                 title="GST Calculation"
               />
             </div>

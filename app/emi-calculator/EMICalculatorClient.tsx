@@ -230,7 +230,7 @@ export default function EMICalculatorClient({
 
             <div className="flex items-center justify-end gap-3">
               <ShareButton />
-              <PDFExportButton targetId="emi-pdf-export" filename={`calcbharat-emi-${new Date().toISOString().slice(0,10)}.pdf`} title="EMI Calculation" />
+              <PDFExportButton targetId="emi-pdf-export" filename={`paisabatao-emi-${new Date().toISOString().slice(0,10)}.pdf`} title="EMI Calculation" />
             </div>
           </div>
 

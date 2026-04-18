@@ -108,7 +108,7 @@ export default function FDCalculatorClient() {
             <BreakdownTable rows={rows} title="Deposit Summary" />
             <CalcChart type="doughnut" data={doughnutData} title="Principal vs Interest" />
             <div className="flex justify-end">
-              <PDFExportButton targetId="fd-pdf-export" filename={`calcbharat-fd-${new Date().toISOString().slice(0,10)}.pdf`} title="FD/RD Calculation" />
+              <PDFExportButton targetId="fd-pdf-export" filename={`paisabatao-fd-${new Date().toISOString().slice(0,10)}.pdf`} title="FD/RD Calculation" />
             </div>
           </div>
         </div>

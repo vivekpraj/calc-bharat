@@ -46,7 +46,7 @@ export async function exportToPDF(elementId: string, filename: string): Promise<
     pdf.setTextColor(255, 255, 255);
     pdf.setFontSize(9);
     pdf.setFont('helvetica', 'bold');
-    pdf.text('CalcBharat — Free Indian Financial Calculators', pdfWidth / 2, 8, { align: 'center' });
+    pdf.text('PaisaBatao — Free Indian Financial Calculators', pdfWidth / 2, 8, { align: 'center' });
 
     // ── Slice canvas for this page ─────────────────────────
     const srcY      = page * scaledPageHeight;
@@ -72,7 +72,7 @@ export async function exportToPDF(elementId: string, filename: string): Promise<
     pdf.setTextColor(156, 163, 175);
     pdf.setFont('helvetica', 'normal');
     pdf.text(
-      `Disclaimer: For reference only. Consult a financial advisor before making decisions. calcbharat.com`,
+      `Disclaimer: For reference only. Consult a financial advisor before making decisions. paisabatao.in`,
       pdfWidth / 2,
       pdfHeight - 3,
       { align: 'center' },

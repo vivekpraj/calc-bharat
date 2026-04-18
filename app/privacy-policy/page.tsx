@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | CalcBharat",
+  title: "Privacy Policy | PaisaBatao",
   description:
-    "CalcBharat's privacy policy. We don't collect personal financial data. Learn how we handle your information.",
+    "PaisaBatao's privacy policy. We don't collect personal financial data. Learn how we handle your information.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-lg font-bold text-gray-900 mb-3">1. Overview</h2>
               <p>
-                CalcBharat (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) operates the website calcbharat.com. This Privacy
+                PaisaBatao (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) operates the website paisabatao.in. This Privacy
                 Policy explains what information we collect, how we use it, and your rights. We are
                 committed to protecting your privacy. We do <strong>not</strong> collect, store, or
                 sell any personal financial data you enter into our calculators.
@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
 
             <section>
               <h2 className="text-lg font-bold text-gray-900 mb-3">2. Data We Do NOT Collect</h2>
-              <p className="mb-3">CalcBharat does not require any account creation or login. We do not collect:</p>
+              <p className="mb-3">PaisaBatao does not require any account creation or login. We do not collect:</p>
               <ul className="list-disc list-inside space-y-1 text-sm">
                 <li>Your name, email address, or phone number</li>
                 <li>Your income, salary, or tax details entered in calculators</li>
@@ -70,7 +70,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-lg font-bold text-gray-900 mb-3">4. Cookies</h2>
               <p>
-                CalcBharat uses cookies only through Google Analytics for anonymous traffic
+                PaisaBatao uses cookies only through Google Analytics for anonymous traffic
                 measurement. We do not use cookies for advertising, tracking across other websites,
                 or storing your calculator inputs.
               </p>
@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-lg font-bold text-gray-900 mb-3">6. Children&apos;s Privacy</h2>
               <p>
-                CalcBharat is not directed at children under the age of 13. We do not knowingly
+                PaisaBatao is not directed at children under the age of 13. We do not knowingly
                 collect any information from children.
               </p>
             </section>
@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-lg font-bold text-gray-900 mb-3">7. Changes to This Policy</h2>
               <p>
                 We may update this Privacy Policy from time to time. Any changes will be posted
-                on this page with an updated date. Continued use of CalcBharat after any changes
+                on this page with an updated date. Continued use of PaisaBatao after any changes
                 constitutes your acceptance of the updated policy.
               </p>
             </section>
@@ -114,8 +114,8 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-lg font-bold text-gray-900 mb-3">8. Contact</h2>
               <p>
                 If you have any questions about this Privacy Policy, you can reach us at{" "}
-                <a href="mailto:hello@calcbharat.com" className="text-brand-600 hover:underline">
-                  hello@calcbharat.com
+                <a href="mailto:hello@paisabatao.in" className="text-brand-600 hover:underline">
+                  hello@paisabatao.in
                 </a>.
               </p>
             </section>

@@ -61,7 +61,7 @@ export default function PPFCalculatorClient() {
             <CalcChart type="bar" data={barData} title="Year-wise PPF Growth (15 Years)" height={260} options={{ scales: { x: { stacked: true }, y: { stacked: true } } }} />
             <BreakdownTable rows={tableRows.slice(0, 5)} title="Year-by-Year Breakdown (first 5 years)" />
             <div className="flex justify-end">
-              <PDFExportButton targetId="ppf-pdf-export" filename={`calcbharat-ppf-${new Date().toISOString().slice(0,10)}.pdf`} title="PPF Calculation" />
+              <PDFExportButton targetId="ppf-pdf-export" filename={`paisabatao-ppf-${new Date().toISOString().slice(0,10)}.pdf`} title="PPF Calculation" />
             </div>
           </div>
         </div>

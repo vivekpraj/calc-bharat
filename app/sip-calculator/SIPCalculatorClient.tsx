@@ -142,7 +142,7 @@ export default function SIPCalculatorClient() {
             </div>
             <div className="flex justify-end gap-2">
               <ShareButton />
-              <PDFExportButton targetId="sip-pdf-export" filename={`calcbharat-sip-${new Date().toISOString().slice(0,10)}.pdf`} title="SIP Calculation" />
+              <PDFExportButton targetId="sip-pdf-export" filename={`paisabatao-sip-${new Date().toISOString().slice(0,10)}.pdf`} title="SIP Calculation" />
             </div>
           </div>
 

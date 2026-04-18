@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { articles } from "@/lib/blog/articles";
 
-const BASE_URL = "https://calcbharat.com";
+const BASE_URL = "https://paisabatao.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

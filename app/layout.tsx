@@ -10,17 +10,17 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://calcbharat.com"),
+  metadataBase: new URL("https://paisabatao.in"),
   title: {
-    default: "CalcBharat — Free Indian Financial Calculators",
-    template: "%s | CalcBharat",
+    default: "PaisaBatao — Free Indian Financial Calculators",
+    template: "%s | PaisaBatao",
   },
   description:
     "Free GST, EMI, SIP, Income Tax, HRA calculators for India. Fast, accurate, no login required.",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "CalcBharat",
+    siteName: "PaisaBatao",
   },
   robots: { index: true, follow: true },
 };

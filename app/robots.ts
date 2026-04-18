@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://calcbharat.com/sitemap.xml",
-    host: "https://calcbharat.com",
+    sitemap: "https://paisabatao.in/sitemap.xml",
+    host: "https://paisabatao.in",
   };
 }
