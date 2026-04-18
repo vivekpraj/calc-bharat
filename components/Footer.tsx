@@ -31,6 +31,7 @@ const FOOTER_LINKS = [
     title: "Company",
     links: [
       { label: "About", href: "/about" },
+      { label: "Contact Us", href: "/contact" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms of Use", href: "/terms-of-use" },
       { label: "Blog", href: "/blog" },
