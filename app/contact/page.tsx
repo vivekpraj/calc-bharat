@@ -63,10 +63,10 @@ export default function ContactPage() {
               </div>
               <h3 className="font-semibold text-gray-900 mb-1 text-sm">Email Us</h3>
               <a
-                href="mailto:hello@paisabatao.in"
+                href="mailto:vishal.ai.business@gmail.com"
                 className="text-sm text-brand-600 hover:underline break-all"
               >
-                hello@paisabatao.in
+                vishal.ai.business@gmail.com
               </a>
             </div>
 
