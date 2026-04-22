@@ -17,6 +17,112 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "itr-filing-last-date-2026",
+    title: "ITR Filing Last Date 2026 — Deadlines for Salaried, Business & Audit Cases",
+    description:
+      "Complete guide to ITR filing deadlines for FY 2025-26 (AY 2026-27). Know the last date for salaried employees, self-employed, business owners, and audit cases. Avoid penalties with this deadline checklist.",
+    category: "Tax",
+    readTime: "7 min read",
+    publishedAt: "2026-04-23",
+    content: [
+      {
+        heading: "ITR Filing Deadlines for FY 2025-26 (AY 2026-27) — Quick Summary",
+        paragraphs: [
+          "The Income Tax Return (ITR) filing season for FY 2025-26 (Assessment Year 2026-27) is now open. The ITR forms for AY 2026-27 have been notified by the Income Tax Department. Here are the key deadlines you need to mark in your calendar.",
+        ],
+        bullets: [
+          "Salaried individuals & non-business taxpayers: 31 July 2026",
+          "Self-employed & non-audit business taxpayers: 31 August 2026 (extended from July 31 in Budget 2026)",
+          "Businesses requiring tax audit (turnover above ₹1 crore / ₹10 crore): 31 October 2026",
+          "Transfer pricing cases: 30 November 2026",
+          "Belated / revised return: 31 December 2026",
+          "Updated return (ITR-U): within 48 months from end of relevant assessment year",
+        ],
+      },
+      {
+        heading: "ITR Last Date for Salaried Employees — 31 July 2026",
+        paragraphs: [
+          "If you are a salaried employee with income only from salary, one house property, interest, and other sources (no business or professional income), the last date to file your ITR for FY 2025-26 is 31 July 2026. This applies to taxpayers filing ITR-1 (Sahaj) and ITR-2.",
+          "Most salaried taxpayers receive Form 16 from their employer by mid-June. You should ideally file your ITR within 2–3 weeks of receiving Form 16 to avoid last-minute rush and server slowdowns on the e-filing portal. The Annual Information Statement (AIS) and Tax Information Summary (TIS) on the income tax portal should be checked before filing to ensure all income and TDS entries match.",
+        ],
+        bullets: [
+          "Applicable forms: ITR-1 (Sahaj) and ITR-2",
+          "Form 16 typically issued by employer by 15 June",
+          "Verify AIS / TIS on incometax.gov.in before filing",
+          "Pre-filled data available on the e-filing portal — verify before submitting",
+        ],
+      },
+      {
+        heading: "ITR Last Date for Self-Employed & Freelancers — 31 August 2026",
+        paragraphs: [
+          "Budget 2026 introduced an important change for non-audit business taxpayers. The ITR filing deadline for self-employed individuals, freelancers, consultants, and small business owners who do not require a tax audit has been moved from 31 July to 31 August 2026. This gives an extra month to organise accounts and file accurately.",
+          "If you run a business or profession and your turnover is below the tax audit threshold (₹1 crore for businesses, ₹50 lakh for professionals), you fall in this category. You will typically file using ITR-3 or ITR-4 (Sugam). The one-month extension is especially useful for those who need time to reconcile GST returns, bank statements, and expense records.",
+        ],
+        bullets: [
+          "Applicable forms: ITR-3, ITR-4 (Sugam)",
+          "Turnover threshold for this category: below ₹1 crore (business) or ₹50 lakh (profession)",
+          "New deadline: 31 August 2026 — one month later than salaried taxpayers",
+          "Ensure books of accounts are maintained as required under the Income Tax Act",
+        ],
+      },
+      {
+        heading: "ITR Last Date for Audit Cases — 31 October 2026",
+        paragraphs: [
+          "Businesses and professionals whose accounts are required to be audited under Section 44AB must file their ITR by 31 October 2026. The tax audit report in Form 3CA/3CB and 3CD must be uploaded by the Chartered Accountant before the ITR can be filed. The audit report deadline is typically 30 September.",
+          "Tax audit is mandatory when business turnover exceeds ₹1 crore (or ₹10 crore if cash transactions are less than 5% of total transactions) or when professional receipts exceed ₹50 lakh. It is also required when a taxpayer opts out of the presumptive taxation scheme under Section 44AD/44ADA and declares income below the prescribed percentage.",
+        ],
+        bullets: [
+          "Tax audit required: business turnover above ₹1 crore (₹10 crore for digital-heavy businesses)",
+          "Professional receipts above ₹50 lakh: audit mandatory",
+          "CA must upload audit report before ITR filing",
+          "Penalty for missing audit deadline: ₹1.5 lakh or 0.5% of turnover, whichever is lower",
+        ],
+      },
+      {
+        heading: "Penalty for Late ITR Filing — Section 234F",
+        paragraphs: [
+          "Under the new Income Tax Act 2025 (Section 428, replacing Section 234F), if you miss the ITR filing due date, a late fee is levied at the time of filing the belated return. The fee is ₹1,000 if your total income does not exceed ₹5 lakh. If your income is above ₹5 lakh, the late fee is ₹5,000.",
+          "In addition to the late filing fee, you will also lose the ability to carry forward losses from capital gains, business, or speculation income if you file late. Interest under Section 234A may also apply if you have outstanding tax dues. Filing on time is always the better option.",
+        ],
+        bullets: [
+          "Income up to ₹5 lakh: late fee ₹1,000",
+          "Income above ₹5 lakh: late fee ₹5,000",
+          "Cannot carry forward capital loss if ITR is filed after due date",
+          "Interest at 1% per month under Section 234A on unpaid tax",
+          "Belated return can be filed up to 31 December 2026",
+        ],
+      },
+      {
+        heading: "What is ITR-U (Updated Return) and When Can You File It?",
+        paragraphs: [
+          "ITR-U, introduced in Budget 2022, allows taxpayers to correct omissions or errors in a previously filed return, or file a return even if the original deadline was missed — up to a much longer window. Budget 2026 extended the ITR-U window to 48 months (4 years) from the end of the relevant assessment year, giving taxpayers greater flexibility.",
+          "For example, for AY 2026-27 (FY 2025-26), you can file an ITR-U up to 31 March 2031. However, filing an updated return requires payment of additional tax — 25% of aggregate tax and interest if filed within 12 months, and 50% if filed after 12 months but within 24 months, and so on. ITR-U cannot be used to claim a refund or reduce tax liability — it is only for declaring additional income.",
+        ],
+        bullets: [
+          "ITR-U window: 48 months from end of assessment year (extended in Budget 2026)",
+          "Additional tax of 25%–50% of due tax applies",
+          "Cannot be used to reduce tax liability or claim refund",
+          "Useful for declaring missed income to avoid scrutiny or prosecution",
+        ],
+      },
+      {
+        heading: "ITR Filing Checklist for FY 2025-26",
+        paragraphs: [
+          "Before you sit down to file your ITR for FY 2025-26, make sure you have these documents ready: Form 16 from employer, Form 26AS (tax credit statement), Annual Information Statement (AIS) from incometax.gov.in, bank interest certificates, capital gains statements from broker or mutual fund platforms, and home loan interest certificates if applicable.",
+          "Use our Income Tax Calculator to compare the tax liability under old and new regime before filing. Choosing the wrong regime at the time of filing could mean paying more tax than necessary. You can switch regimes every year if you do not have business income.",
+        ],
+        bullets: [
+          "Form 16: issued by employer, shows salary and TDS",
+          "Form 26AS / AIS: verify all TDS credits and income entries",
+          "Bank interest: savings account, FD interest must be declared",
+          "Capital gains: equity, mutual funds, property sale gains",
+          "Home loan certificate: for Section 24(b) and 80EEA deductions",
+          "Rent receipts: for HRA exemption under old regime",
+        ],
+      },
+    ],
+  },
+  {
     slug: "new-vs-old-tax-regime-2025",
     title: "New vs Old Tax Regime: Which Should You Choose in FY 2026-27?",
     description:
