@@ -17,6 +17,121 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "how-to-file-itr-fy-2025-26",
+    title: "How to File ITR Online for FY 2025-26 (AY 2026-27) — Step by Step Guide",
+    description:
+      "Complete step-by-step guide to file your Income Tax Return online for FY 2025-26 (AY 2026-27). From login to e-verification — everything a salaried employee or freelancer needs to know.",
+    category: "Tax",
+    readTime: "8 min read",
+    publishedAt: "2026-04-24",
+    content: [
+      {
+        heading: "Before You Start — Documents You Need",
+        paragraphs: [
+          "Filing your ITR for FY 2025-26 is now open on the Income Tax e-filing portal (incometax.gov.in). Before you begin, keep these documents handy to avoid interruptions. Having everything ready in advance makes the entire process take under 20 minutes for most salaried individuals.",
+        ],
+        bullets: [
+          "PAN card and Aadhaar number",
+          "Form 16 — issued by your employer (available by mid-June)",
+          "Form 26AS and Annual Information Statement (AIS) — download from incometax.gov.in",
+          "Bank account details (account number and IFSC)",
+          "Capital gains statements — from broker or mutual fund platform (if applicable)",
+          "Home loan interest certificate — for Section 24(b) deduction",
+          "Rent receipts — for HRA exemption under old regime",
+          "Bank interest certificates — for savings and FD interest income",
+        ],
+      },
+      {
+        heading: "Step 1 — Log In to the Income Tax Portal",
+        paragraphs: [
+          "Go to incometax.gov.in and click on 'Login'. Enter your PAN as the User ID along with your password. If you have not registered yet, click 'Register' and create an account using your PAN. After logging in, go to the 'e-File' menu and select 'Income Tax Returns' → 'File Income Tax Return'.",
+          "Important: The portal now shows two tabs — one for the Income Tax Act 1961 and one for the new Income Tax Act 2025. For FY 2025-26 (AY 2026-27), select the tab for Income Tax Act 1961. The new Act applies to Tax Year 2026-27 onwards.",
+        ],
+      },
+      {
+        heading: "Step 2 — Select Assessment Year and Filing Mode",
+        paragraphs: [
+          "Select Assessment Year as '2026-27' from the dropdown. Choose 'Online' as the filing mode — this is the recommended option for most taxpayers as it is faster, pre-filled, and supports e-verification. Click Continue.",
+          "Select your filing status as 'Individual'. If you are filing on behalf of an HUF or firm, select accordingly.",
+        ],
+      },
+      {
+        heading: "Step 3 — Choose the Correct ITR Form",
+        paragraphs: [
+          "Selecting the right ITR form is critical. Filing the wrong form results in a defective return notice from the Income Tax Department. Here is a quick guide to choosing the correct form for FY 2025-26.",
+        ],
+        bullets: [
+          "ITR-1 (Sahaj): Salaried individuals with income from salary, up to two house properties, and interest — total income up to ₹50 lakh. Cannot be used if you have capital gains, foreign assets, or business income. (New for AY 2026-27: now allows two house properties, previously only one)",
+          "ITR-2: Salaried individuals with capital gains (stocks, mutual funds, property), more than two house properties, or income above ₹50 lakh — deadline 31 July 2026",
+          "ITR-3: Individuals with income from business or profession along with salary — deadline 31 August 2026 for non-audit cases",
+          "ITR-4 (Sugam): Individuals and HUFs with presumptive business income under Section 44AD/44ADA/44AE — turnover up to ₹2 crore. Now also allows up to two house properties (new for AY 2026-27). Investment and bank balance disclosure now mandatory.",
+        ],
+      },
+      {
+        heading: "Step 4 — Review and Validate Pre-filled Data",
+        paragraphs: [
+          "The portal pre-fills your personal details, income, TDS, and bank information using data from your employer, banks, and other sources. Do not simply accept the pre-filled data — always verify it against your Form 16 and AIS before proceeding. Errors in pre-filled data are common and can result in incorrect tax computation.",
+          "Check your salary income against Form 16 Part B. Verify TDS credits against Form 26AS. If any income appears in AIS that you do not recognise, cross-check with your bank statements before either accepting or disputing the entry.",
+        ],
+        bullets: [
+          "Verify name, PAN, date of birth, and address",
+          "Confirm salary figures match Form 16 Part B",
+          "Check TDS credits in Form 26AS match your return",
+          "Add any income not pre-filled — rental income, freelance income, FD interest",
+          "Ensure bank account is pre-validated for refund credit",
+        ],
+      },
+      {
+        heading: "Step 5 — Choose Your Tax Regime",
+        paragraphs: [
+          "For FY 2025-26, you must declare whether you are filing under the old tax regime or the new tax regime. The new regime is the default — if you want to switch to the old regime, you must explicitly opt for it in the ITR form. Salaried individuals (without business income) can switch regimes every year.",
+          "Under the new regime for FY 2025-26, income up to ₹12 lakh attracts zero tax due to the Section 87A rebate, and the standard deduction is ₹75,000. Under the old regime, you can claim deductions under 80C (up to ₹1.5 lakh), HRA, home loan interest, 80D, and others. Use our Income Tax Calculator to compare both regimes before making your choice.",
+        ],
+      },
+      {
+        heading: "Step 6 — Enter Income, Deductions and Compute Tax",
+        paragraphs: [
+          "Fill in your income details across all heads — salary, house property, capital gains, other sources (interest, dividends). Then enter your deductions under Chapter VI-A if you are on the old regime (80C, 80D, 80E, etc.). The portal will automatically compute your total tax liability.",
+          "If you have already paid advance tax or self-assessment tax, verify those entries against your Challan receipts. If additional tax is payable after considering TDS, you must pay it via Challan 280 on the portal before submitting the return. Tax paid after filing attracts interest under Section 234B and 234C.",
+        ],
+        bullets: [
+          "Salary: enter gross salary and exempt allowances (HRA, LTA)",
+          "House property: rental income minus 30% standard deduction and loan interest",
+          "Capital gains: short term (STCG) and long term (LTCG) from stocks, MF, property",
+          "Other sources: savings interest, FD interest, dividend income",
+          "Deductions: 80C, 80CCD(1B), 80D, 80E, 80G, HRA (old regime only)",
+        ],
+      },
+      {
+        heading: "Step 7 — Submit and E-Verify Your Return",
+        paragraphs: [
+          "Once you have reviewed all details and the tax computation looks correct, click 'Preview Return' → 'Proceed to Validation' → 'Submit'. After submission, you must e-verify your return within 30 days. If you do not e-verify within 30 days, your return will be treated as not filed, even if submitted.",
+          "E-verification is quick and free. The easiest method is Aadhaar OTP — an OTP is sent to the mobile number linked to your Aadhaar. Other methods include net banking EVC, bank ATM EVC, or Demat account EVC. If none of these work, you can download the ITR-V acknowledgement and send a signed physical copy to CPC Bengaluru by speed post within 30 days.",
+        ],
+        bullets: [
+          "Aadhaar OTP: fastest method — requires mobile linked to Aadhaar",
+          "Net Banking: login to your bank's net banking and generate EVC",
+          "Bank ATM: generate EVC from your bank's ATM",
+          "Physical ITR-V: download, sign in blue ink, post to CPC Bengaluru within 30 days",
+          "After e-verification, save the acknowledgement number for future reference",
+        ],
+      },
+      {
+        heading: "What Happens After Filing?",
+        paragraphs: [
+          "After successful e-verification, your ITR is processed by the Centralised Processing Centre (CPC) in Bengaluru. You will receive an intimation under Section 143(1) — usually within 20–45 days — confirming the return is processed. If a refund is due, it is credited to your pre-validated bank account, usually within 7–30 days of processing.",
+          "If there is a mismatch in your return, you may receive a defective return notice under Section 139(9) or a notice for additional information under Section 142(1). Respond promptly to any such notices on the portal. Most issues can be resolved online without visiting a tax office.",
+        ],
+        bullets: [
+          "Processing time: 20–45 days after e-verification",
+          "Refund credit: 7–30 days after processing (directly to bank account)",
+          "Section 143(1) intimation: confirms return is accepted or highlights mismatch",
+          "Keep Form 16, investment proofs, and rent receipts for at least 6 years",
+        ],
+      },
+    ],
+  },
+  {
     slug: "itr-filing-last-date-2026",
     title: "ITR Filing Last Date 2026 — Deadlines for Salaried, Business & Audit Cases",
     description:
