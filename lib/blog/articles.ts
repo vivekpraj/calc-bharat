@@ -17,6 +17,129 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "which-itr-form-to-file-ay-2026-27",
+    title: "Which ITR Form Should You File? ITR-1 vs ITR-2 vs ITR-3 vs ITR-4 Explained (AY 2026-27)",
+    description:
+      "Not sure which ITR form to file for FY 2025-26 (AY 2026-27)? This guide explains ITR-1, ITR-2, ITR-3 and ITR-4 eligibility with new changes — find the right form in minutes and avoid a defective return notice.",
+    category: "Tax",
+    readTime: "7 min read",
+    publishedAt: "2026-04-27",
+    content: [
+      {
+        heading: "Why Choosing the Right ITR Form Matters",
+        paragraphs: [
+          "Filing your Income Tax Return using the wrong form is one of the most common mistakes Indian taxpayers make. The Income Tax Department will issue a defective return notice under Section 139(9) if you file the incorrect form — and you will need to refile within 15 days or the return will be treated as invalid. With new changes introduced for AY 2026-27, it is more important than ever to confirm you are using the correct form before you start filing.",
+          "The good news: for most salaried individuals, the choice is straightforward. Use this guide to identify your correct form in under 2 minutes.",
+        ],
+      },
+      {
+        heading: "Quick Decision Guide — Which Form Is Yours?",
+        paragraphs: [
+          "Answer these questions in order to find your ITR form for FY 2025-26 (AY 2026-27):",
+        ],
+        bullets: [
+          "Salaried with income up to ₹50L, no capital gains above ₹1.25L, no business income → ITR-1 (Sahaj)",
+          "Salaried with capital gains (stocks/MF/property), or income above ₹50L, or director in a company → ITR-2",
+          "Business or professional income (freelancer, consultant, trader, partner in firm) → ITR-3",
+          "Small business / professional opting for presumptive taxation under 44AD/44ADA → ITR-4 (Sugam)",
+        ],
+      },
+      {
+        heading: "ITR-1 (Sahaj) — For Simple Salaried Taxpayers",
+        paragraphs: [
+          "ITR-1, also called Sahaj, is the simplest ITR form and is applicable for resident individuals with total income up to ₹50 lakh from salary or pension, up to two house properties, and other sources such as savings interest and FD interest.",
+          "New for AY 2026-27: ITR-1 now allows reporting of Long Term Capital Gains (LTCG) under Section 112A up to ₹1.25 lakh — provided there are no capital losses to carry forward. This means many salaried investors who previously had to file ITR-2 just because of small mutual fund or equity gains can now stick with the simpler ITR-1. Also new: ITR-1 now allows up to two house properties (previously only one).",
+        ],
+        bullets: [
+          "✅ Salary or pension income",
+          "✅ Up to two house properties (new for AY 2026-27)",
+          "✅ Interest income — savings, FD, post office",
+          "✅ LTCG under Section 112A up to ₹1.25 lakh (new for AY 2026-27)",
+          "❌ Cannot use if income exceeds ₹50 lakh",
+          "❌ Cannot use if you are a director in any company",
+          "❌ Cannot use if you hold unlisted equity shares",
+          "❌ Cannot use if you have business or professional income",
+          "❌ Cannot use if you have foreign assets or income",
+          "Deadline: 31 July 2026",
+        ],
+      },
+      {
+        heading: "ITR-2 — For Salaried with Capital Gains or High Income",
+        paragraphs: [
+          "ITR-2 is for individuals and HUFs who have income from salary, capital gains, or multiple house properties — but do not have any income from business or profession. If you sold shares, mutual funds, or property during FY 2025-26, or if your income exceeds ₹50 lakh, ITR-2 is your form.",
+          "ITR-2 is also mandatory if you are a Director in any company (listed or unlisted), hold unlisted equity shares, have agricultural income above ₹5,000, or have foreign assets or income from outside India. Compared to ITR-1, ITR-2 has more schedules but is still straightforward to fill on the e-filing portal with the pre-filled data feature.",
+        ],
+        bullets: [
+          "✅ Salary + capital gains (STCG or LTCG above ₹1.25 lakh)",
+          "✅ Income above ₹50 lakh",
+          "✅ More than two house properties",
+          "✅ Director in a company",
+          "✅ Holder of unlisted equity shares",
+          "✅ Foreign assets or foreign income",
+          "✅ Agricultural income above ₹5,000",
+          "❌ Cannot use if you have business or professional income",
+          "Deadline: 31 July 2026",
+        ],
+      },
+      {
+        heading: "ITR-3 — For Business Owners, Freelancers & Traders",
+        paragraphs: [
+          "ITR-3 is for individuals and HUFs who have income from business or profession — including salaried individuals who also have freelance income, F&O traders, partners in firms, and professionals like doctors, architects, and lawyers with private practice.",
+          "If you are a freelancer with clients in India or abroad, an F&O trader with speculative income, or a salaried employee who moonlights as a consultant and receives professional fees, ITR-3 is your form. It is the most comprehensive individual ITR form and requires maintaining books of accounts if turnover exceeds specified limits.",
+        ],
+        bullets: [
+          "✅ Freelancers and independent consultants",
+          "✅ F&O traders (futures and options)",
+          "✅ Partners in a partnership firm",
+          "✅ Doctors, architects, lawyers with private practice",
+          "✅ Anyone with both salary and business/professional income",
+          "Deadline: 31 August 2026 for non-audit cases (extended from July 31 in Budget 2026)",
+          "Deadline: 31 October 2026 for audit cases",
+        ],
+      },
+      {
+        heading: "ITR-4 (Sugam) — For Small Business Under Presumptive Taxation",
+        paragraphs: [
+          "ITR-4 is for individuals, HUFs, and firms (other than LLPs) who have opted for the presumptive taxation scheme under Section 44AD (business), 44ADA (professionals), or 44AE (transport). Under presumptive taxation, you declare a fixed percentage of turnover as income without maintaining detailed books of accounts — significantly reducing compliance burden for small businesses.",
+          "New for AY 2026-27: The turnover threshold under Section 44AD has been raised to ₹3 crore for businesses (if at least 95% of transactions are digital). For professionals under 44ADA, the threshold is ₹75 lakh (with 95% digital transactions). ITR-4 now also allows reporting of up to two house properties and LTCG under Section 112A up to ₹1.25 lakh.",
+        ],
+        bullets: [
+          "✅ Small businesses with turnover up to ₹3 crore (Section 44AD)",
+          "✅ Professionals with receipts up to ₹75 lakh (Section 44ADA — doctors, CAs, engineers)",
+          "✅ Transporters under Section 44AE",
+          "✅ Up to two house properties (new for AY 2026-27)",
+          "✅ LTCG under 112A up to ₹1.25 lakh (new for AY 2026-27)",
+          "❌ Cannot use if you opt out of presumptive scheme",
+          "❌ Cannot use if you are a director in a company",
+          "❌ Cannot use if you have foreign assets",
+          "Deadline: 31 August 2026 for non-audit cases",
+        ],
+      },
+      {
+        heading: "Key Changes in ITR Forms for AY 2026-27 — Summary",
+        paragraphs: [
+          "CBDT notified the updated ITR forms for AY 2026-27 in March 2026, ahead of the financial year — giving taxpayers more time to prepare. Here are the most important changes that affect which form you should file.",
+        ],
+        bullets: [
+          "ITR-1 & ITR-4 now allow up to two house properties (previously only one)",
+          "ITR-1 & ITR-4 now allow LTCG under Section 112A up to ₹1.25 lakh",
+          "ITR-3 & ITR-4 deadline extended to August 31 for non-audit cases (Budget 2026)",
+          "Section 44AD turnover threshold raised to ₹3 crore (with 95% digital transactions)",
+          "Section 44ADA threshold raised to ₹75 lakh (with 95% digital transactions)",
+          "Retirement benefit accounts from foreign countries removed from ITR-1 and ITR-4 — must use ITR-2 or ITR-3",
+          "New disclosure requirements in ITR-4: investment and bank balance details now mandatory",
+        ],
+      },
+      {
+        heading: "Still Confused? Use This Simple Rule",
+        paragraphs: [
+          "If you are a salaried employee with no F&O trading, no freelance income, no foreign assets, and no directorship — you will file either ITR-1 or ITR-2. The only question is: did you sell any stocks, mutual funds, or property in FY 2025-26 with gains above ₹1.25 lakh? If yes → ITR-2. If no → ITR-1.",
+          "If you have any business or professional income at all, even as a side income alongside your salary → ITR-3. If that business income is under the presumptive taxation threshold and you want simplified compliance → ITR-4. Use our Income Tax Calculator to estimate your tax liability under old and new regime before you file.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "how-to-file-itr-fy-2025-26",
     title: "How to File ITR Online for FY 2025-26 (AY 2026-27) — Step by Step Guide",
     description:
