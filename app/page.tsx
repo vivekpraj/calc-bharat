@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const TOOL_CATEGORIES = [
   {
     category: "GST Tools",
-    categoryColor: "text-accent-600",
+    categoryColor: "text-accent-700",
     categoryBg: "bg-accent-50 border-accent-200",
     tools: [
       {
@@ -160,7 +160,7 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
               href="/gst-invoice-generator"
-              className="flex items-center gap-2 px-5 py-2.5 bg-accent-500 text-white text-sm font-bold rounded-xl hover:bg-accent-600 transition-all shadow-lg shadow-accent-500/30 hover:scale-[1.03]"
+              className="flex items-center gap-2 px-5 py-2.5 bg-accent-600 text-white text-sm font-bold rounded-xl hover:bg-accent-700 transition-all shadow-lg shadow-accent-600/30 hover:scale-[1.03]"
             >
               <FileText className="w-4 h-4" />
               Generate Free Invoice

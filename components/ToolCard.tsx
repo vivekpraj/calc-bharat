@@ -26,10 +26,10 @@ export default function ToolCard({
         <div className={`w-11 h-11 rounded-xl ${iconBg} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
           <Icon className={`w-5 h-5 ${iconColor}`} />
         </div>
-        <h3 className="text-sm font-semibold text-gray-800 group-hover:text-brand-600 transition-colors leading-snug mb-1.5">
+        <p className="text-sm font-semibold text-gray-800 group-hover:text-brand-600 transition-colors leading-snug mb-1.5">
           {title}
-        </h3>
-        <p className="text-xs text-gray-400 leading-relaxed">{description}</p>
+        </p>
+        <p className="text-xs text-gray-500 leading-relaxed">{description}</p>
       </div>
     </Link>
   );

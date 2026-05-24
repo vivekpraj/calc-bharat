@@ -108,7 +108,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <Link
               href="/gst-invoice-generator"
-              className="flex items-center gap-1.5 px-4 py-2 bg-accent-500 text-white text-sm font-semibold rounded-lg hover:bg-accent-600 transition-colors shadow-sm"
+              className="flex items-center gap-1.5 px-4 py-2 bg-accent-600 text-white text-sm font-semibold rounded-lg hover:bg-accent-700 transition-colors shadow-sm"
             >
               <FileText className="w-4 h-4" />
               Free Invoice
@@ -163,7 +163,7 @@ export default function Navbar() {
               <Link
                 href="/gst-invoice-generator"
                 onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-accent-500 text-white text-sm font-semibold rounded-lg"
+                className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-accent-600 text-white text-sm font-semibold rounded-lg hover:bg-accent-700 transition-colors"
               >
                 <FileText className="w-4 h-4" />
                 Free GST Invoice
