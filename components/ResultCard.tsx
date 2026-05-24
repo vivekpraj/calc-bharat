@@ -1,6 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
-import { useSpring } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 interface ResultCardProps {
   label: string;
@@ -34,16 +33,33 @@ const sizeMap = {
 };
 
 function AnimatedValue({ value, format }: { value: number; format: (v: number) => string }) {
-  const spring = useSpring(value, { stiffness: 300, damping: 30 });
   const [display, setDisplay] = useState(format(value));
+  const prevRef = useRef(value);
+  const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
-    spring.set(value);
-  }, [value, spring]);
+    const from = prevRef.current;
+    const to = value;
+    prevRef.current = to;
 
-  useEffect(() => {
-    return spring.on("change", (v) => setDisplay(format(v)));
-  }, [spring, format]);
+    if (from === to) return;
+
+    const duration = 500;
+    const start = performance.now();
+
+    const tick = (now: number) => {
+      const t = Math.min((now - start) / duration, 1);
+      // ease-out cubic
+      const eased = 1 - Math.pow(1 - t, 3);
+      setDisplay(format(from + (to - from) * eased));
+      if (t < 1) rafRef.current = requestAnimationFrame(tick);
+    };
+
+    rafRef.current = requestAnimationFrame(tick);
+    return () => {
+      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+    };
+  }, [value, format]);
 
   return <span>{display}</span>;
 }

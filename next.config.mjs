@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    optimizeCss: true,   // inline critical CSS → removes render-blocking penalty
+  },
   headers: async () => [
     {
       source: "/(.*)",
