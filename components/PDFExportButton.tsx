@@ -41,6 +41,7 @@ export default function PDFExportButton({ targetId, filename }: PDFExportButtonP
       <button
         onClick={handleClick}
         disabled={phase !== "idle"}
+        aria-label={label}
         className="flex items-center gap-2 px-5 py-2.5 bg-brand-600 text-white text-sm font-semibold rounded-xl hover:bg-brand-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed shadow-sm"
       >
         <Download className="w-4 h-4" />

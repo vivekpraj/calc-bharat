@@ -36,7 +36,7 @@ export default function DisclaimerModal() {
             <h2 className="text-sm font-bold text-gray-900">Important Disclaimer</h2>
             <p className="text-xs text-gray-400">Please read before using our calculators</p>
           </div>
-          <button onClick={dismiss} className="ml-auto p-1.5 text-gray-400 hover:text-gray-600 rounded-lg hover:bg-gray-100 transition-colors">
+          <button onClick={dismiss} aria-label="Close disclaimer" className="ml-auto p-1.5 text-gray-400 hover:text-gray-600 rounded-lg hover:bg-gray-100 transition-colors">
             <X className="w-4 h-4" />
           </button>
         </div>

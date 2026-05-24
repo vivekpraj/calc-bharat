@@ -356,7 +356,7 @@ export default function GSTInvoiceClient() {
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-xs font-semibold text-gray-500">Item {i + 1}</span>
                   {data.items.length > 1 && (
-                    <button onClick={() => removeItem(item.id)} className="text-red-400 hover:text-red-600"><Trash2 className="w-3.5 h-3.5" /></button>
+                    <button onClick={() => removeItem(item.id)} aria-label="Remove item" className="text-red-400 hover:text-red-600"><Trash2 className="w-3.5 h-3.5" /></button>
                   )}
                 </div>
                 <Field label="Description"><input className={inputCls} value={item.description} onChange={(e) => setItem(item.id, "description", e.target.value)} placeholder="Service or product name" /></Field>
