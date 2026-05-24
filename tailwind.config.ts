@@ -30,8 +30,8 @@ const config: Config = {
           300: "#FFAC70",
           400: "#FF8F40",
           500: "#FF7420",   // main accent
-          600: "#E85C00",   // hover
-          700: "#C24D00",
+          600: "#B84700",   // buttons — passes 4.9:1 with white (WCAG AA)
+          700: "#963B00",   // hover + badge text — passes 6.1:1 on accent-50
           800: "#9C3E00",
           900: "#762F00",
         },
