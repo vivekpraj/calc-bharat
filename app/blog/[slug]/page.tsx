@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles, getArticleBySlug } from "@/lib/blog/articles";
 import type { Article } from "@/lib/blog/articles";
+import JsonLd from "@/components/JsonLd";
 
 interface PageProps {
   params: { slug: string };
@@ -48,24 +49,19 @@ function formatDate(dateStr: string): string {
 }
 
 const relatedCalc: Record<string, { label: string; href: string }> = {
-  "new-vs-old-tax-regime-2025": {
-    label: "Income Tax Calculator",
-    href: "/income-tax-calculator",
-  },
-  "home-loan-emi-tips": {
-    label: "Home Loan EMI Calculator",
-    href: "/home-loan-emi-calculator",
-  },
+  // ITR / income tax articles
+  "which-itr-form-to-file-ay-2026-27": { label: "Income Tax Calculator", href: "/income-tax-calculator" },
+  "how-to-file-itr-fy-2025-26":        { label: "Income Tax Calculator", href: "/income-tax-calculator" },
+  "itr-filing-last-date-2026":         { label: "Income Tax Calculator", href: "/income-tax-calculator" },
+  "new-vs-old-tax-regime-2025":        { label: "Income Tax Calculator", href: "/income-tax-calculator" },
+  // Loan articles
+  "home-loan-emi-tips": { label: "Home Loan EMI Calculator", href: "/home-loan-emi-calculator" },
+  // Investment articles
   "sip-vs-lumpsum": { label: "SIP Calculator", href: "/sip-calculator" },
-  "gst-for-freelancers": {
-    label: "GST Calculator",
-    href: "/gst-calculator",
-  },
-  "hra-exemption-guide": {
-    label: "HRA Calculator",
-    href: "/hra-calculator",
-  },
-  "ppf-vs-elss": { label: "PPF Calculator", href: "/ppf-calculator" },
+  "ppf-vs-elss":    { label: "PPF Calculator", href: "/ppf-calculator" },
+  // GST / Salary articles
+  "gst-for-freelancers": { label: "GST Calculator",  href: "/gst-calculator" },
+  "hra-exemption-guide": { label: "HRA Calculator",  href: "/hra-calculator" },
 };
 
 export default function ArticlePage({ params }: PageProps) {
@@ -77,8 +73,21 @@ export default function ArticlePage({ params }: PageProps) {
 
   const calc = relatedCalc[article.slug];
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.publishedAt,
+    dateModified: article.updatedAt ?? article.publishedAt,
+    author: { "@type": "Organization", name: "PaisaBatao", url: "https://paisabatao.in" },
+    publisher: { "@type": "Organization", name: "PaisaBatao", url: "https://paisabatao.in" },
+    mainEntityOfPage: `https://paisabatao.in/blog/${article.slug}`,
+  };
+
   return (
     <main className="min-h-screen bg-gray-50">
+      <JsonLd data={articleSchema} />
       <div className="max-w-2xl mx-auto px-4 py-10">
         {/* Back link */}
         <Link
