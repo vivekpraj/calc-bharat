@@ -2,6 +2,15 @@ import type { Metadata } from "next";
 import IncomeTaxClient from "./IncomeTaxClient";
 import LastUpdatedBadge from "@/components/LastUpdatedBadge";
 import JsonLd from "@/components/JsonLd";
+import FAQSection from "@/components/FAQSection";
+
+const faqs = [
+  { q: "What is the income tax slab for FY 2026-27 under the New regime?", a: "Under the New regime for FY 2026-27: ₹0–4 lakh = Nil, ₹4–8 lakh = 5%, ₹8–12 lakh = 10%, ₹12–16 lakh = 15%, ₹16–20 lakh = 20%, ₹20–24 lakh = 25%, above ₹24 lakh = 30%. Income up to ₹12 lakh is effectively tax-free due to the rebate under Section 87A." },
+  { q: "Is the New tax regime better than the Old regime?", a: "For most salaried individuals with fewer deductions, the New regime is better from FY 2026-27 as it offers lower slab rates and a higher rebate limit (₹12 lakh). The Old regime is better if you have high deductions like HRA, 80C (₹1.5L), 80D, home loan interest, etc. Use our calculator to compare both instantly." },
+  { q: "What is the standard deduction for salaried employees in FY 2026-27?", a: "The standard deduction is ₹75,000 for salaried employees under the New tax regime for FY 2026-27 (increased from ₹50,000). Under the Old regime, it remains ₹50,000." },
+  { q: "How is income tax calculated in India?", a: "Income tax is calculated on your total taxable income after deductions. The net income is applied to the applicable tax slabs (New or Old regime), then surcharge and health & education cess (4%) are added. A rebate under Section 87A is available if income is within the threshold." },
+  { q: "What is Section 87A rebate in FY 2026-27?", a: "Under the New tax regime, individuals with taxable income up to ₹12 lakh get a full rebate under Section 87A, making their effective tax zero. Under the Old regime, the rebate is ₹12,500 for income up to ₹5 lakh." },
+];
 
 export const metadata: Metadata = {
   title: "Income Tax Calculator 2026-27 — New vs Old Tax Regime India",
@@ -30,6 +39,7 @@ export default function IncomeTaxPage() {
         </div>
         <IncomeTaxClient />
       </div>
+      <FAQSection faqs={faqs} />
     </>
   );
 }
