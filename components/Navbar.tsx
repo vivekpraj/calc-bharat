@@ -55,7 +55,7 @@ export default function Navbar() {
               <Calculator className="w-4 h-4 text-white" />
             </div>
             <span className="font-bold text-xl text-gray-900">
-              Paisa<span className="text-brand-600">Batao</span>
+              Paisa<span className="text-accent-400">Batao</span>
             </span>
           </Link>
 
