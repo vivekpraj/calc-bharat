@@ -146,13 +146,6 @@ export default function SIPCalculatorClient() {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-            <h2 className="text-base font-semibold text-gray-800 mb-4">FAQ</h2>
-            <div className="space-y-4 text-sm">
-              <div><h3 className="font-semibold text-gray-800">What is SIP?</h3><p className="text-gray-500 mt-1">SIP (Systematic Investment Plan) is a method of investing a fixed amount regularly in mutual funds. It helps build wealth over time through rupee cost averaging and compounding.</p></div>
-              <div><h3 className="font-semibold text-gray-800">What is Step-up SIP?</h3><p className="text-gray-500 mt-1">Step-up SIP increases your monthly investment by a fixed percentage each year. This aligns with salary growth and accelerates wealth creation significantly.</p></div>
-            </div>
-          </div>
         </div>
         <div className="hidden xl:flex flex-col items-center pt-2"><AdSlot slot="sip-right" format="rectangle" /></div>
       </div>

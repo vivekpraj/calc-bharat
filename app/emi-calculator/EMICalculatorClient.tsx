@@ -234,15 +234,6 @@ export default function EMICalculatorClient({
             </div>
           </div>
 
-          {/* FAQ */}
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-            <h2 className="text-base font-semibold text-gray-800 mb-4">Frequently Asked Questions</h2>
-            <div className="space-y-4 text-sm">
-              <div><h3 className="font-semibold text-gray-800">What is EMI?</h3><p className="text-gray-500 mt-1">EMI (Equated Monthly Instalment) is the fixed monthly payment you make to repay a loan. It includes both principal and interest components.</p></div>
-              <div><h3 className="font-semibold text-gray-800">What is the formula for EMI calculation?</h3><p className="text-gray-500 mt-1">EMI = P × r × (1+r)^n / ((1+r)^n − 1), where P = Principal, r = monthly interest rate, n = number of monthly instalments.</p></div>
-              <div><h3 className="font-semibold text-gray-800">Does prepayment reduce EMI or tenure?</h3><p className="text-gray-500 mt-1">Prepayment reduces the outstanding principal, which reduces the total interest. Banks generally offer the option to either reduce EMI amount or reduce loan tenure.</p></div>
-            </div>
-          </div>
         </div>
 
         <div className="hidden xl:flex flex-col items-center pt-2">

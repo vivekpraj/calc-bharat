@@ -208,24 +208,6 @@ export default function GSTCalculatorClient() {
             </div>
           </div>
 
-          {/* FAQ */}
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-            <h2 className="text-base font-semibold text-gray-800 mb-4">Frequently Asked Questions</h2>
-            <div className="space-y-4 text-sm">
-              <div>
-                <h3 className="font-semibold text-gray-800">What is GST?</h3>
-                <p className="text-gray-500 mt-1">Goods and Services Tax (GST) is a unified indirect tax levied on the supply of goods and services in India. It replaced multiple indirect taxes and has slabs of 0%, 5%, 12%, 18%, and 28%.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-800">What is the difference between CGST, SGST, and IGST?</h3>
-                <p className="text-gray-500 mt-1">For intra-state transactions, GST is split equally between Central GST (CGST) and State GST (SGST). For inter-state transactions, Integrated GST (IGST) is levied by the central government.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-800">How do I calculate GST on an amount?</h3>
-                <p className="text-gray-500 mt-1">GST Amount = Base Amount × (GST Rate / 100). Total = Base + GST. To reverse-calculate, Base = Total × 100 / (100 + Rate).</p>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Right Ad */}

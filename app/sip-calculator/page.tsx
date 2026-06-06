@@ -5,6 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import FAQSection from "@/components/FAQSection";
 
 const faqs = [
+  { q: "What is SIP?", a: "SIP (Systematic Investment Plan) is a method of investing a fixed amount regularly (monthly/quarterly) in a mutual fund. Each instalment buys units at the current NAV. It builds wealth over time through rupee cost averaging and the power of compounding — you buy more units when markets are low and fewer when high." },
   { q: "What is SIP and how does it work?", a: "SIP (Systematic Investment Plan) is a method of investing a fixed amount in a mutual fund at regular intervals (monthly/quarterly). Each instalment buys units at the current NAV. Over time, you benefit from rupee cost averaging — buying more units when NAV is low and fewer when NAV is high — reducing the impact of market volatility." },
   { q: "What return rate should I assume for SIP calculation?", a: "For equity mutual funds, a 10–12% annual return is commonly used for long-term projections (10+ years). For debt funds, 6–7% is typical. For hybrid funds, 8–9%. These are estimates — actual returns vary based on market conditions and fund performance." },
   { q: "What is a Step-Up SIP?", a: "A Step-Up (or Top-Up) SIP allows you to increase your monthly investment amount by a fixed percentage or amount each year. For example, starting with ₹5,000/month and increasing by 10% annually. This significantly increases your final corpus as your income grows over time." },

@@ -295,14 +295,6 @@ export default function IncomeTaxClient() {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-            <h2 className="text-base font-semibold text-gray-800 mb-4">FAQ</h2>
-            <div className="space-y-4 text-sm">
-              <div><h3 className="font-semibold text-gray-800">What is the difference between Old and New tax regime?</h3><p className="text-gray-500 mt-1">The old regime allows deductions under 80C, 80D, HRA, etc. The new regime has lower tax rates but no deductions. If your deductions are large, old regime saves more; otherwise, new regime is better.</p></div>
-              <div><h3 className="font-semibold text-gray-800">Who should choose the New Regime in FY 2026-27?</h3><p className="text-gray-500 mt-1">Taxpayers with income up to ₹12 lakh pay zero tax under the new regime due to the rebate under section 87A (FY 2026-27). Those with minimal deductions generally benefit more from the new regime.</p></div>
-              <div><h3 className="font-semibold text-gray-800">What is included in Section 80C?</h3><p className="text-gray-500 mt-1">80C includes: EPF contributions, PPF, ELSS mutual funds, life insurance premiums, NSC, 5-year FD, and home loan principal repayment. Limit: ₹1.5 lakh.</p></div>
-            </div>
-          </div>
         </div>
 
         <div className="hidden xl:flex flex-col items-center pt-2"><AdSlot slot="tax-right" format="rectangle" /></div>

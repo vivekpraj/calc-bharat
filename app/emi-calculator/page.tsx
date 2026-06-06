@@ -5,6 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import FAQSection from "@/components/FAQSection";
 
 const faqs = [
+  { q: "What is EMI?", a: "EMI (Equated Monthly Instalment) is the fixed monthly amount you pay to repay a loan. Each EMI has two parts: interest on the outstanding principal, and a portion of the principal itself. Early EMIs are mostly interest; later EMIs are mostly principal." },
   { q: "How is EMI calculated?", a: "EMI = [P × R × (1+R)^N] / [(1+R)^N – 1], where P = Principal loan amount, R = Monthly interest rate (Annual rate ÷ 12 ÷ 100), N = Loan tenure in months. For example, ₹10 lakh loan at 8.5% for 20 years = EMI of approximately ₹8,678." },
   { q: "Does prepayment reduce EMI or tenure?", a: "Most banks by default reduce the loan tenure on prepayment, which saves more interest. However, you can request to reduce the EMI instead. Reducing tenure is financially better as you pay less total interest." },
   { q: "What is the maximum loan tenure in India?", a: "Home loans: up to 30 years. Car loans: up to 7 years. Personal loans: up to 5–7 years. Education loans: up to 15 years. The maximum tenure depends on your age, income, and bank policy." },
