@@ -16,6 +16,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "EMI Calculator India 2026 — Home, Car & Personal Loan EMI",
   description: "Free EMI calculator India 2026. Calculate monthly EMI for Home Loan, Car Loan, Personal & Education Loan. Instant amortization schedule with total interest breakdown.",
+  alternates: { canonical: "https://paisabatao.in/emi-calculator" },
 };
 
 const schema = {

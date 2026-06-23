@@ -17,6 +17,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "Income Tax Calculator 2026-27 — New vs Old Tax Regime India",
   description: "Free income tax calculator for FY 2026-27 (AY 2026-27). Compare Old vs New tax regime slabs instantly. Find which regime saves you more tax — no login needed.",
+  alternates: { canonical: "https://paisabatao.in/income-tax-calculator" },
 };
 
 const schema = {

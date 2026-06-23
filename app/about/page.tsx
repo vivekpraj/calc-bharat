@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "About PaisaBatao — Free Indian Financial Calculators",
   description:
     "PaisaBatao provides free, accurate Indian financial calculators for income tax, HRA, EMI, SIP, GST, PPF, and more. Built for every Indian.",
+  alternates: { canonical: "https://paisabatao.in/about" },
 };
 
 const calculators = [

@@ -16,6 +16,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "Education Loan EMI Calculator India 2026 — Student Loan EMI",
   description: "Free education loan EMI calculator India 2026. Calculate student loan EMI with moratorium period. Plan your repayment schedule after course completion.",
+  alternates: { canonical: "https://paisabatao.in/education-loan-emi-calculator" },
 };
 
 const schema = {

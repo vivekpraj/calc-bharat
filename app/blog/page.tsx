@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Financial Insights & Articles | PaisaBatao",
   description:
     "Expert guides on Indian income tax, home loans, SIP investing, GST compliance, and salary planning. Stay informed with PaisaBatao's financial articles.",
+  alternates: { canonical: "https://paisabatao.in/blog" },
   openGraph: {
     title: "Financial Insights & Articles | PaisaBatao",
     description:

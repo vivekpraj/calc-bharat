@@ -14,6 +14,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "Free GST Invoice Generator India 2026 — Download PDF Instantly",
   description: "Create free GST invoices online with live preview. Download PDF instantly. Supports CGST, SGST, IGST for all business types. No registration needed.",
+  alternates: { canonical: "https://paisabatao.in/gst-invoice-generator" },
 };
 
 const schema = {

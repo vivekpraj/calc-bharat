@@ -49,6 +49,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: "PaisaBatao",
   },
+  alternates: { canonical: "https://paisabatao.in" },
   robots: { index: true, follow: true },
   verification: {
     other: { "msvalidate.01": "0B0217E37CE3203913E63D87FC41E14F" },

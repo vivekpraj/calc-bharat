@@ -15,6 +15,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "HRA Exemption Calculator 2026 India — Section 10(13A) Tax Benefit",
   description: "Free HRA exemption calculator India FY 2026-27. Calculate HRA tax exemption under Section 10(13A) for metro cities: Mumbai, Delhi, Bengaluru, Chennai and more.",
+  alternates: { canonical: "https://paisabatao.in/hra-calculator" },
 };
 
 const schema = {

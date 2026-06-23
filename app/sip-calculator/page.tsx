@@ -16,6 +16,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "SIP Calculator India 2026 — Monthly SIP Returns & Future Value",
   description: "Free SIP calculator India 2026. Calculate future value of monthly SIP investments with step-up option. See total wealth growth, returns and corpus at maturity.",
+  alternates: { canonical: "https://paisabatao.in/sip-calculator" },
 };
 
 const schema = {

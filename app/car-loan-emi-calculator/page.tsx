@@ -16,6 +16,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "Car Loan EMI Calculator 2026 — Vehicle & Two-Wheeler Loan EMI",
   description: "Free car loan EMI calculator India 2026. Calculate monthly EMI for new and used car loans. Compare interest rates and get instant EMI breakdown.",
+  alternates: { canonical: "https://paisabatao.in/car-loan-emi-calculator" },
 };
 
 const schema = {

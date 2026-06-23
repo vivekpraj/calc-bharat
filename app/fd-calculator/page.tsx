@@ -14,6 +14,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "FD Calculator India 2026 — Fixed Deposit & RD Maturity Amount",
   description: "Free FD and RD calculator India 2026. Calculate Fixed Deposit and Recurring Deposit maturity with quarterly/monthly compounding and TDS deduction.",
+  alternates: { canonical: "https://paisabatao.in/fd-calculator" },
 };
 
 const schema = {

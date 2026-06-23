@@ -15,6 +15,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "CTC to In-Hand Salary Calculator 2026-27 India",
   description: "Free salary calculator India FY 2026-27. Break down CTC into Basic, HRA, PF, Special Allowance and get exact net in-hand take-home salary after all deductions.",
+  alternates: { canonical: "https://paisabatao.in/salary-calculator" },
 };
 
 const schema = {

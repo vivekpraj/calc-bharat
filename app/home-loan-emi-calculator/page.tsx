@@ -16,6 +16,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "Home Loan EMI Calculator 2026 — Monthly Housing Loan Instalment",
   description: "Free home loan EMI calculator India 2026. Calculate monthly EMI for housing loans at SBI, HDFC, ICICI rates. Get full amortization schedule and prepayment analysis.",
+  alternates: { canonical: "https://paisabatao.in/home-loan-emi-calculator" },
 };
 
 const schema = {

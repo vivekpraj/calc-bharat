@@ -14,6 +14,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "PPF Calculator 2026-27 — Maturity Amount at 7.1% Interest",
   description: "Free PPF calculator FY 2026-27. Calculate PPF maturity amount, total interest earned and year-by-year breakdown at 7.1% p.a. Plan your 15-year investment.",
+  alternates: { canonical: "https://paisabatao.in/ppf-calculator" },
 };
 
 const schema = {

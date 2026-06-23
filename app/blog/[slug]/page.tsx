@@ -21,6 +21,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   return {
     title: `${article.title} | PaisaBatao`,
     description: article.description,
+    alternates: { canonical: `https://paisabatao.in/blog/${article.slug}` },
     openGraph: {
       title: article.title,
       description: article.description,
