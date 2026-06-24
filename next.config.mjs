@@ -3,17 +3,6 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
   },
-  // Force www → non-www 301 redirect so Google never sees duplicate URLs
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.paisabatao.in" }],
-        destination: "https://paisabatao.in/:path*",
-        permanent: true,
-      },
-    ];
-  },
   headers: async () => [
     {
       source: "/(.*)",
