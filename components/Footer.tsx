@@ -70,6 +70,19 @@ export default function Footer() {
             © {new Date().getFullYear()} PaisaBatao. Free Indian Financial Calculators. For reference only — not financial advice.
           </p>
         </div>
+        <div className="mt-6 pt-4 border-t border-white/5 text-center">
+          <p className="text-xs text-gray-600">
+            Featured on{" "}
+            <a
+              href="https://www.toolpilot.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-400 transition-colors"
+            >
+              ToolPilot.ai
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
