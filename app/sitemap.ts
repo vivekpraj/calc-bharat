@@ -8,6 +8,7 @@ const BASE_URL = "https://paisabatao.in";
 const LAUNCH_DATE = new Date("2026-04-20");
 const HRA_UPDATED  = new Date("2026-04-25"); // updated metro cities list
 const PERF_UPDATED = new Date("2026-05-30"); // performance + accessibility pass
+const SEO_UPDATED  = new Date("2026-08-20"); // FAQ sections + JSON-LD schema added
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -22,55 +23,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── High-value calculators
     {
       url: `${BASE_URL}/income-tax-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: SEO_UPDATED,
       changeFrequency: "monthly",
       priority: 0.95,
     },
     {
       url: `${BASE_URL}/gst-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: SEO_UPDATED,
       changeFrequency: "monthly",
       priority: 0.95,
     },
     {
       url: `${BASE_URL}/gst-invoice-generator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: SEO_UPDATED,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/emi-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: SEO_UPDATED,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/sip-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: SEO_UPDATED,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/salary-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: SEO_UPDATED,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/hra-calculator`,
-      lastModified: HRA_UPDATED,
+      lastModified: SEO_UPDATED,
       changeFrequency: "monthly",
       priority: 0.85,
     },
     {
       url: `${BASE_URL}/ppf-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: SEO_UPDATED,
       changeFrequency: "monthly",
       priority: 0.85,
     },
     {
       url: `${BASE_URL}/fd-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: SEO_UPDATED,
       changeFrequency: "monthly",
       priority: 0.85,
     },
