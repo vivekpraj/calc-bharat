@@ -6,7 +6,6 @@ const BASE_URL = "https://paisabatao.in";
 // Use real dates — never use new Date() for static pages.
 // Google stops trusting lastModified if it changes on every deploy.
 const LAUNCH_DATE = new Date("2026-04-20");
-const HRA_UPDATED  = new Date("2026-04-25"); // updated metro cities list
 const PERF_UPDATED = new Date("2026-05-30"); // performance + accessibility pass
 const SEO_UPDATED  = new Date("2026-08-20"); // FAQ sections + JSON-LD schema added
 
