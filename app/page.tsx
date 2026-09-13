@@ -177,16 +177,22 @@ export default function HomePage() {
 
           {/* Quick-access pills */}
           <div className="mt-8 flex flex-wrap justify-center gap-2">
-            {["GST Calculator", "EMI Calculator", "SIP Calculator", "Income Tax", "PPF Calculator", "HRA Calculator"].map(
-              (tool) => (
-                <span
-                  key={tool}
-                  className="px-3 py-1.5 bg-white/8 text-white/60 text-xs rounded-lg border border-white/10"
-                >
-                  {tool}
-                </span>
-              )
-            )}
+            {[
+              { label: "GST Calculator", href: "/gst-calculator" },
+              { label: "EMI Calculator", href: "/emi-calculator" },
+              { label: "SIP Calculator", href: "/sip-calculator" },
+              { label: "Income Tax", href: "/income-tax-calculator" },
+              { label: "PPF Calculator", href: "/ppf-calculator" },
+              { label: "HRA Calculator", href: "/hra-calculator" },
+            ].map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="px-3 py-1.5 bg-white/8 text-white/60 text-xs rounded-lg border border-white/10 hover:bg-white/15 hover:text-white/80 transition-colors"
+              >
+                {tool.label}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

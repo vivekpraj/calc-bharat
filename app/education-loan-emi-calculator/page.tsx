@@ -38,6 +38,53 @@ export default function EducationLoanEMIPage() {
       <Suspense>
         <EMICalculatorClient defaultLoanType={3} pageTitle="Education Loan EMI Calculator" pageDesc="Calculate EMI for education loans. Plan your student loan repayment after the course completion." />
       </Suspense>
+
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">How Education Loan EMI Works in India</h2>
+        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+          Education loans in India have a unique structure not found in other loans — a <strong>moratorium period</strong> during which you don't pay EMIs. This covers your entire course duration plus an additional 6–12 months after graduation (or 6 months after getting a job, whichever is earlier). During this period, simple interest accrues on the outstanding principal. At the end of the moratorium, this accrued interest may be added to the principal (increasing your EMI base) or paid monthly as simple interest.
+        </p>
+        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+          Example: a ₹10 lakh education loan at 9.5% p.a. for a 2-year course with 12-month post-course grace period (total moratorium: 3 years). During 3 years, accrued interest = approximately ₹2.85 lakh (simple interest). If added to principal, repayment begins on ₹12.85 lakh. At 5-year repayment tenure, monthly EMI = approximately ₹26,930.
+        </p>
+        <h3 className="text-base font-semibold text-gray-900 mb-2">Education Loan Rates in India (2026)</h3>
+        <div className="overflow-x-auto mb-4">
+          <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left px-4 py-2 font-semibold text-gray-700">Bank</th>
+                <th className="text-left px-4 py-2 font-semibold text-gray-700">India Studies</th>
+                <th className="text-left px-4 py-2 font-semibold text-gray-700">Abroad Studies</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                { bank: "SBI (Student Loan)", india: "8.55–11.15%", abroad: "9.15–11.15%" },
+                { bank: "Bank of Baroda", india: "9.20–10.70%", abroad: "9.20–10.70%" },
+                { bank: "Canara Bank", india: "8.85–10.50%", abroad: "8.85–10.50%" },
+                { bank: "HDFC Credila", india: "11–13%", abroad: "11–13%" },
+                { bank: "Avanse Financial", india: "11.5–13.5%", abroad: "11.5–13.5%" },
+              ].map((row) => (
+                <tr key={row.bank} className="bg-white">
+                  <td className="px-4 py-2 text-gray-700">{row.bank}</td>
+                  <td className="px-4 py-2 text-gray-700">{row.india}</td>
+                  <td className="px-4 py-2 text-gray-700">{row.abroad}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <h3 className="text-base font-semibold text-gray-900 mb-2">Section 80E Tax Benefit — Save on Education Loan Interest</h3>
+        <ul className="text-gray-600 text-sm space-y-2 list-disc list-inside mb-4">
+          <li><strong>Full interest deduction:</strong> Under Section 80E, the entire interest paid on education loans is deductible — no upper limit, unlike Section 80C (capped at ₹1.5 lakh).</li>
+          <li><strong>Who can claim:</strong> The borrower (student) or the co-applicant (parent/spouse) can claim the deduction — whichever is repaying the loan.</li>
+          <li><strong>Duration:</strong> Available for 8 consecutive assessment years from the year repayment begins, or until interest is fully repaid — whichever is earlier.</li>
+          <li><strong>Old regime only:</strong> This deduction applies only under the Old tax regime. If you opt for the New regime, Section 80E deduction is not available.</li>
+          <li><strong>Courses covered:</strong> Full-time higher education in India or abroad. Part-time and vocational courses may not qualify — verify with your lender.</li>
+        </ul>
+        <p className="text-xs text-gray-400">Interest rates sourced from respective bank websites for FY 2026-27. Rates are subject to change based on RBI repo rate and individual credit profile.</p>
+      </section>
+
       <FAQSection faqs={faqs} />
     </>
   );

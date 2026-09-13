@@ -70,7 +70,14 @@ export default function Footer() {
             © {new Date().getFullYear()} PaisaBatao. Free Indian Financial Calculators. For reference only — not financial advice.
           </p>
         </div>
-        <div className="mt-6 pt-4 border-t border-white/5 text-center">
+        <div className="mt-6 pt-4 border-t border-white/5 text-center space-y-2">
+          <p className="text-xs text-gray-500">
+            All calculator formulas are verified against official{" "}
+            <a href="https://incometaxindia.gov.in" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors underline underline-offset-2">CBDT guidelines</a>
+            {" "}and{" "}
+            <a href="https://rbi.org.in" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors underline underline-offset-2">RBI notifications</a>
+            . Updated every Budget season.
+          </p>
           <p className="text-xs text-gray-600">
             Featured on{" "}
             <a

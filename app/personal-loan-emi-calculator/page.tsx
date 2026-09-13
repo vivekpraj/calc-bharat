@@ -38,6 +38,51 @@ export default function PersonalLoanEMIPage() {
       <Suspense>
         <EMICalculatorClient defaultLoanType={2} pageTitle="Personal Loan EMI Calculator" pageDesc="Calculate EMI for personal loans. Compare total interest across different loan amounts and tenures." />
       </Suspense>
+
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">How Personal Loan EMI is Calculated in India</h2>
+        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+          Personal loan EMI is calculated on a reducing balance basis using the formula: <strong>EMI = P × r × (1+r)ⁿ / ((1+r)ⁿ − 1)</strong>. Unlike some older loan products that use flat-rate calculation (where interest is charged on the full principal throughout the tenure), Indian banks now use reducing balance — meaning you only pay interest on the outstanding amount, not the original loan.
+        </p>
+        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+          Example: a ₹5 lakh personal loan at 12% p.a. for 3 years gives a monthly EMI of ₹16,607. Total interest paid: ₹97,852 — roughly 19.6% of the loan amount. At 15% on the same loan, EMI rises to ₹17,332 and total interest jumps to ₹1,23,952. The difference of just 3% in interest rate costs you ₹26,100 extra over 3 years.
+        </p>
+        <h3 className="text-base font-semibold text-gray-900 mb-2">Personal Loan Rates (2026) — By Lender Type</h3>
+        <div className="overflow-x-auto mb-4">
+          <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left px-4 py-2 font-semibold text-gray-700">Lender Type</th>
+                <th className="text-left px-4 py-2 font-semibold text-gray-700">Rate Range</th>
+                <th className="text-left px-4 py-2 font-semibold text-gray-700">EMI on ₹5L / 3yr</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                { type: "Government Banks (SBI, PNB)", rate: "11–13%", emi: "₹16,394–₹16,821" },
+                { type: "Private Banks (HDFC, ICICI)", rate: "10.85–14%", emi: "₹16,370–₹17,088" },
+                { type: "NBFCs (Bajaj, Tata Capital)", rate: "13–18%", emi: "₹16,821–₹18,084" },
+                { type: "Fintech Apps (Navi, MoneyView)", rate: "16–30%", emi: "₹17,571–₹21,742" },
+              ].map((row) => (
+                <tr key={row.type} className="bg-white">
+                  <td className="px-4 py-2 text-gray-700">{row.type}</td>
+                  <td className="px-4 py-2 text-gray-700">{row.rate}</td>
+                  <td className="px-4 py-2 font-medium text-brand-700">{row.emi}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <h3 className="text-base font-semibold text-gray-900 mb-2">When to Choose a Personal Loan</h3>
+        <ul className="text-gray-600 text-sm space-y-2 list-disc list-inside mb-4">
+          <li><strong>Medical emergency:</strong> Personal loans disburse in 24–48 hours, making them ideal for urgent needs where you don't have time for secured loan processing.</li>
+          <li><strong>Debt consolidation:</strong> If you have multiple high-interest credit card dues (36–42% p.a.), consolidating into a personal loan at 12–15% significantly reduces interest burden.</li>
+          <li><strong>Home renovation:</strong> For amounts under ₹10 lakh, personal loans are faster than home improvement loans and don't require property documents.</li>
+          <li><strong>Avoid for long-term needs:</strong> For amounts over ₹15 lakh or tenure above 5 years, secured loans (home loan, loan against property) are far cheaper.</li>
+        </ul>
+        <p className="text-xs text-gray-400">Rates are indicative for FY 2026-27. Actual rates depend on CIBIL score, income, employer category, and lender policy.</p>
+      </section>
+
       <FAQSection faqs={faqs} />
     </>
   );

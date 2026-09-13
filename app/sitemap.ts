@@ -8,6 +8,7 @@ const BASE_URL = "https://paisabatao.in";
 const LAUNCH_DATE = new Date("2026-04-20");
 const PERF_UPDATED = new Date("2026-05-30"); // performance + accessibility pass
 const SEO_UPDATED  = new Date("2026-08-20"); // FAQ sections + JSON-LD schema added
+const CONTENT_UPDATED = new Date("2026-09-13"); // EMI sub-pages content expansion + crawl fixes
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -78,25 +79,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── EMI sub-pages
     {
       url: `${BASE_URL}/home-loan-emi-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: CONTENT_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/car-loan-emi-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: CONTENT_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/personal-loan-emi-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: CONTENT_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/education-loan-emi-calculator`,
-      lastModified: LAUNCH_DATE,
+      lastModified: CONTENT_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
