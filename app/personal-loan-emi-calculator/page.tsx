@@ -75,9 +75,9 @@ export default function PersonalLoanEMIPage() {
         </div>
         <h3 className="text-base font-semibold text-gray-900 mb-2">When to Choose a Personal Loan</h3>
         <ul className="text-gray-600 text-sm space-y-2 list-disc list-inside mb-4">
-          <li><strong>Medical emergency:</strong> Personal loans disburse in 24–48 hours, making them ideal for urgent needs where you don't have time for secured loan processing.</li>
+          <li><strong>Medical emergency:</strong> Personal loans disburse in 24–48 hours, making them ideal for urgent needs where you don&apos;t have time for secured loan processing.</li>
           <li><strong>Debt consolidation:</strong> If you have multiple high-interest credit card dues (36–42% p.a.), consolidating into a personal loan at 12–15% significantly reduces interest burden.</li>
-          <li><strong>Home renovation:</strong> For amounts under ₹10 lakh, personal loans are faster than home improvement loans and don't require property documents.</li>
+          <li><strong>Home renovation:</strong> For amounts under ₹10 lakh, personal loans are faster than home improvement loans and don&apos;t require property documents.</li>
           <li><strong>Avoid for long-term needs:</strong> For amounts over ₹15 lakh or tenure above 5 years, secured loans (home loan, loan against property) are far cheaper.</li>
         </ul>
         <p className="text-xs text-gray-400">Rates are indicative for FY 2026-27. Actual rates depend on CIBIL score, income, employer category, and lender policy.</p>

@@ -42,7 +42,7 @@ export default function EducationLoanEMIPage() {
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <h2 className="text-xl font-bold text-gray-900 mb-4">How Education Loan EMI Works in India</h2>
         <p className="text-gray-600 text-sm leading-relaxed mb-4">
-          Education loans in India have a unique structure not found in other loans — a <strong>moratorium period</strong> during which you don't pay EMIs. This covers your entire course duration plus an additional 6–12 months after graduation (or 6 months after getting a job, whichever is earlier). During this period, simple interest accrues on the outstanding principal. At the end of the moratorium, this accrued interest may be added to the principal (increasing your EMI base) or paid monthly as simple interest.
+          Education loans in India have a unique structure not found in other loans — a <strong>moratorium period</strong> during which you don&apos;t pay EMIs. This covers your entire course duration plus an additional 6–12 months after graduation (or 6 months after getting a job, whichever is earlier). During this period, simple interest accrues on the outstanding principal. At the end of the moratorium, this accrued interest may be added to the principal (increasing your EMI base) or paid monthly as simple interest.
         </p>
         <p className="text-gray-600 text-sm leading-relaxed mb-4">
           Example: a ₹10 lakh education loan at 9.5% p.a. for a 2-year course with 12-month post-course grace period (total moratorium: 3 years). During 3 years, accrued interest = approximately ₹2.85 lakh (simple interest). If added to principal, repayment begins on ₹12.85 lakh. At 5-year repayment tenure, monthly EMI = approximately ₹26,930.
