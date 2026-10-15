@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Download } from "lucide-react";
-import AdPopup from "@/components/AdPopup";
+// import AdPopup from "@/components/AdPopup"; // temporarily disabled for Google Ads review
 
 interface PDFExportButtonProps {
   targetId: string;
@@ -12,14 +12,9 @@ interface PDFExportButtonProps {
 export default function PDFExportButton({ targetId, filename }: PDFExportButtonProps) {
   const [phase, setPhase] = useState<"idle" | "ad" | "downloading">("idle");
 
-  // Step 1 — user clicks → show the ad immediately
-  const handleClick = () => {
+  // Step 1 — user clicks → start PDF download directly (AdPopup disabled)
+  const handleClick = async () => {
     if (phase !== "idle") return;
-    setPhase("ad");
-  };
-
-  // Step 2 — ad finishes (countdown ends or skip) → start PDF download
-  const handleAdClose = async () => {
     setPhase("downloading");
     try {
       const { exportToPDF } = await import("@/lib/utils/pdf");
@@ -32,7 +27,6 @@ export default function PDFExportButton({ targetId, filename }: PDFExportButtonP
   };
 
   const label =
-    phase === "ad" ? "Preparing…" :
     phase === "downloading" ? "Downloading…" :
     "Download PDF";
 
@@ -48,7 +42,7 @@ export default function PDFExportButton({ targetId, filename }: PDFExportButtonP
         {label}
       </button>
 
-      {phase === "ad" && <AdPopup onClose={handleAdClose} />}
+      {/* <AdPopup onClose={handleAdClose} /> — disabled */}
     </>
   );
 }
