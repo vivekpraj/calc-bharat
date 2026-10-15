@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "PaisaBatao — First Free Indian Financial Calculators",
+  title: "Free Indian Financial Calculators — PaisaBatao",
   description:
     "Free GST, EMI, SIP, Income Tax, HRA, PPF calculators for India. All free, instant, no login required.",
 };

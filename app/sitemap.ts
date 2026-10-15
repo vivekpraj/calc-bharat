@@ -1,7 +1,7 @@
-import { MetadataRoute } from "next";
+﻿import { MetadataRoute } from "next";
 import { articles } from "@/lib/blog/articles";
 
-const BASE_URL = "https://paisabatao.in";
+const BASE_URL = "https://www.paisabatao.in";
 
 // Use real dates — never use new Date() for static pages.
 // Google stops trusting lastModified if it changes on every deploy.

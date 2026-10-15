@@ -19,9 +19,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
     return { title: "Article Not Found | PaisaBatao" };
   }
   return {
-    title: `${article.title} | PaisaBatao`,
+    title: article.title,
     description: article.description,
-    alternates: { canonical: `https://paisabatao.in/blog/${article.slug}` },
+    alternates: { canonical: `https://www.paisabatao.in/blog/${article.slug}` },
     openGraph: {
       title: article.title,
       description: article.description,
@@ -81,9 +81,9 @@ export default function ArticlePage({ params }: PageProps) {
     description: article.description,
     datePublished: article.publishedAt,
     dateModified: article.updatedAt ?? article.publishedAt,
-    author: { "@type": "Organization", name: "PaisaBatao", url: "https://paisabatao.in" },
-    publisher: { "@type": "Organization", name: "PaisaBatao", url: "https://paisabatao.in" },
-    mainEntityOfPage: `https://paisabatao.in/blog/${article.slug}`,
+    author: { "@type": "Organization", name: "PaisaBatao", url: "https://www.paisabatao.in" },
+    publisher: { "@type": "Organization", name: "PaisaBatao", url: "https://www.paisabatao.in" },
+    mainEntityOfPage: `https://www.paisabatao.in/blog/${article.slug}`,
   };
 
   return (

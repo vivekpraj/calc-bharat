@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Suspense } from "react";
 import SIPCalculatorClient from "./SIPCalculatorClient";
 import JsonLd from "@/components/JsonLd";
@@ -16,19 +16,19 @@ const faqs = [
 export const metadata: Metadata = {
   title: "SIP Calculator India 2026 — Monthly SIP Returns & Future Value",
   description: "Free SIP calculator India 2026. Calculate future value of monthly SIP investments with step-up option. See total wealth growth, returns and corpus at maturity.",
-  alternates: { canonical: "https://paisabatao.in/sip-calculator" },
+  alternates: { canonical: "https://www.paisabatao.in/sip-calculator" },
 };
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "SIP Calculator India",
-  url: "https://paisabatao.in/sip-calculator",
+  url: "https://www.paisabatao.in/sip-calculator",
   description: "Free SIP calculator. Calculate future value of SIP investments with step-up option and wealth growth visualization.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any",
   offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
-  creator: { "@type": "Organization", name: "PaisaBatao", url: "https://paisabatao.in" },
+  creator: { "@type": "Organization", name: "PaisaBatao", url: "https://www.paisabatao.in" },
 };
 
 export default function SIPCalculatorPage() {

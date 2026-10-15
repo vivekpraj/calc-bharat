@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | PaisaBatao",
   description:
     "PaisaBatao's privacy policy. We don't collect personal financial data. Learn how we handle your information.",
-  alternates: { canonical: "https://paisabatao.in/privacy-policy" },
+  alternates: { canonical: "https://www.paisabatao.in/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

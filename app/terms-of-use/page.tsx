@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Use | PaisaBatao",
   description:
     "Terms of Use for PaisaBatao. Our calculators are for informational purposes only and do not constitute financial or legal advice.",
-  alternates: { canonical: "https://paisabatao.in/terms-of-use" },
+  alternates: { canonical: "https://www.paisabatao.in/terms-of-use" },
 };
 
 export default function TermsOfUsePage() {

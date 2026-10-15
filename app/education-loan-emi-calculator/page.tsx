@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Suspense } from "react";
 import EMICalculatorClient from "../emi-calculator/EMICalculatorClient";
 
@@ -16,19 +16,19 @@ const faqs = [
 export const metadata: Metadata = {
   title: "Education Loan EMI Calculator India 2026 — Student Loan EMI",
   description: "Free education loan EMI calculator India 2026. Calculate student loan EMI with moratorium period. Plan your repayment schedule after course completion.",
-  alternates: { canonical: "https://paisabatao.in/education-loan-emi-calculator" },
+  alternates: { canonical: "https://www.paisabatao.in/education-loan-emi-calculator" },
 };
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Education Loan EMI Calculator",
-  url: "https://paisabatao.in/education-loan-emi-calculator",
+  url: "https://www.paisabatao.in/education-loan-emi-calculator",
   description: "Free education loan EMI calculator. Calculate student loan EMI with moratorium period consideration.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any",
   offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
-  creator: { "@type": "Organization", name: "PaisaBatao", url: "https://paisabatao.in" },
+  creator: { "@type": "Organization", name: "PaisaBatao", url: "https://www.paisabatao.in" },
 };
 
 export default function EducationLoanEMIPage() {

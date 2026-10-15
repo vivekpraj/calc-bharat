@@ -1,7 +1,33 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "WebSearch",
+      "Bash(\"C:/Users/DELL/.claude/plugins/cache/agricidaniel-claude-seo/claude-seo/2.4.2/scripts/claude-seo\" run *)",
+      "Bash(curl -s -L -A \"Mozilla/5.0 \\(compatible; Googlebot/2.1; +http://www.google.com/bot.html\\)\" -D - \"https://www.paisabatao.in/\" -o \"C:/Users/DELL/AppData/Local/Temp/claude/C--Users-DELL-Documents-calc-bharat/d9fa61fa-9676-4e8a-b349-80d8e023cd2b/scratchpad/homepage.html\")",
+      "Bash(python -I -c ' *)",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(compatible; Googlebot/2.1; +http://www.google.com/bot.html\\)\" \"https://www.paisabatao.in/robots.txt\")",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(compatible; Googlebot/2.1; +http://www.google.com/bot.html\\)\" \"https://www.paisabatao.in/sitemap.xml\")",
+      "Bash(curl -s -I -L \"https://www.paisabatao.in/\")",
+      "Bash(curl -s -I \"https://www.paisabatao.in/sitemap.xml\")",
+      "Bash(curl -s -I \"https://paisabatao.in/sitemap.xml\")",
+      "Bash(curl -s -I \"https://paisabatao.in/\")",
+      "Bash(curl -s -I \"http://paisabatao.in/\")",
+      "Bash(curl -s -I \"http://www.paisabatao.in/\")",
+      "Bash(python -I analyze.py C:/Users/DELL/AppData/Local/Temp/claude/C--Users-DELL-Documents-calc-bharat/d9fa61fa-9676-4e8a-b349-80d8e023cd2b/scratchpad/pages)",
+      "Bash(PYTHONIOENCODING=utf-8 python -I analyze.py C:/Users/DELL/AppData/Local/Temp/claude/C--Users-DELL-Documents-calc-bharat/d9fa61fa-9676-4e8a-b349-80d8e023cd2b/scratchpad/pages)",
+      "Bash(curl -s \"https://www.paisabatao.in/\" -o -)",
+      "Bash(python -I -X utf8 analyze.py C:/Users/DELL/AppData/Local/Temp/claude/C--Users-DELL-Documents-calc-bharat/d9fa61fa-9676-4e8a-b349-80d8e023cd2b/scratchpad/pages)",
+      "Bash(python -I \"C:/Users/DELL/AppData/Local/Temp/claude/C--Users-DELL-Documents-calc-bharat/d9fa61fa-9676-4e8a-b349-80d8e023cd2b/scratchpad/wc.py\" \"C:/Users/DELL/Documents/calc-bharat\")",
+      "Bash(curl -s \"https://www.paisabatao.in/emi-calculator\" -o -)",
+      "Bash(curl -s \"https://www.paisabatao.in/\")",
+      "Bash(cat app/sitemap.ts | head -60; echo ----; grep -n \"publishedAt\\\\|updatedAt\\\\|author\\\\|datePublished\\\\|dateModified\\\\|readTime\" \"app/blog/[slug]/page.tsx\"; echo ----; grep -rn \"title:\\\\|description:\" app/*/page.tsx | grep -v \"q:\\\\|name:\" | grep -v \"^app/blog\" | head -50; ls \"C:/Users/DELL/.claude/plugins/cache/agricidaniel-claude-seo/claude-seo/2.4.2/scripts/\" | head -40)",
+      "WebFetch(domain:www.bing.com)",
+      "Bash(python -I C:/Users/DELL/AppData/Local/Temp/claude/C--Users-DELL-Documents-calc-bharat/d9fa61fa-9676-4e8a-b349-80d8e023cd2b/scratchpad/mkpairs.py C:/Users/DELL/Documents/calc-bharat C:/Users/DELL/AppData/Local/Temp/claude/C--Users-DELL-Documents-calc-bharat/d9fa61fa-9676-4e8a-b349-80d8e023cd2b/scratchpad/metadata.json)",
+      "Bash(C:/Users/DELL/.claude/plugins/cache/agricidaniel-claude-seo/claude-seo/2.4.2/scripts/claude-seo run *)",
+      "Bash(grep -o 'noscript[^<]*<\\\\/noscript>')",
+      "Bash(python -I C:/Users/DELL/.claude/plugins/cache/agricidaniel-claude-seo/claude-seo/2.4.2/scripts/metadata_template.py --pairs-file C:/Users/DELL/AppData/Local/Temp/claude/C--Users-DELL-Documents-calc-bharat/d9fa61fa-9676-4e8a-b349-80d8e023cd2b/scratchpad/metadata.json --json)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://www.paisabatao.in/indexnow\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://www.paisabatao.in/BingSiteAuth.xml\")"
     ]
   }
 }

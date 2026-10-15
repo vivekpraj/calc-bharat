@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -13,23 +13,18 @@ const siteSchema = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://paisabatao.in/#org",
+      "@id": "https://www.paisabatao.in/#org",
       name: "PaisaBatao",
-      url: "https://paisabatao.in",
-      logo: "https://paisabatao.in/icon.svg",
+      url: "https://www.paisabatao.in",
+      logo: "https://www.paisabatao.in/icon.svg",
       description: "Free Indian financial calculators for GST, EMI, SIP, Income Tax, HRA, PPF, FD and salary.",
     },
     {
       "@type": "WebSite",
-      "@id": "https://paisabatao.in/#website",
+      "@id": "https://www.paisabatao.in/#website",
       name: "PaisaBatao",
-      url: "https://paisabatao.in",
-      publisher: { "@id": "https://paisabatao.in/#org" },
-      potentialAction: {
-        "@type": "SearchAction",
-        target: "https://paisabatao.in/blog?q={search_term_string}",
-        "query-input": "required name=search_term_string",
-      },
+      url: "https://www.paisabatao.in",
+      publisher: { "@id": "https://www.paisabatao.in/#org" },
     },
   ],
 };
@@ -37,7 +32,7 @@ const siteSchema = {
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://paisabatao.in"),
+  metadataBase: new URL("https://www.paisabatao.in"),
   title: {
     default: "PaisaBatao — Free Indian Financial Calculators",
     template: "%s | PaisaBatao",
@@ -49,7 +44,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: "PaisaBatao",
   },
-  alternates: { canonical: "https://paisabatao.in" },
+  alternates: { canonical: "https://www.paisabatao.in" },
   robots: { index: true, follow: true },
   verification: {
     other: { "msvalidate.01": "0B0217E37CE3203913E63D87FC41E14F" },

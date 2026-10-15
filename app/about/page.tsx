@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Calculator, Target, ShieldCheck, Zap } from "lucide-react";
 
@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "About PaisaBatao — Free Indian Financial Calculators",
   description:
     "PaisaBatao provides free, accurate Indian financial calculators for income tax, HRA, EMI, SIP, GST, PPF, and more. Built for every Indian.",
-  alternates: { canonical: "https://paisabatao.in/about" },
+  alternates: { canonical: "https://www.paisabatao.in/about" },
 };
 
 const calculators = [

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { articles } from "@/lib/blog/articles";
 import BlogArticles from "./BlogArticles";
 
@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Financial Insights & Articles | PaisaBatao",
   description:
     "Expert guides on Indian income tax, home loans, SIP investing, GST compliance, and salary planning. Stay informed with PaisaBatao's financial articles.",
-  alternates: { canonical: "https://paisabatao.in/blog" },
+  alternates: { canonical: "https://www.paisabatao.in/blog" },
   openGraph: {
     title: "Financial Insights & Articles | PaisaBatao",
     description:

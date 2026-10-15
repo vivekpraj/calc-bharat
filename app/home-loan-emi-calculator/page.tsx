@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Suspense } from "react";
 import EMICalculatorClient from "../emi-calculator/EMICalculatorClient";
 
@@ -16,19 +16,19 @@ const faqs = [
 export const metadata: Metadata = {
   title: "Home Loan EMI Calculator 2026 — Monthly Housing Loan Instalment",
   description: "Free home loan EMI calculator India 2026. Calculate monthly EMI for housing loans at SBI, HDFC, ICICI rates. Get full amortization schedule and prepayment analysis.",
-  alternates: { canonical: "https://paisabatao.in/home-loan-emi-calculator" },
+  alternates: { canonical: "https://www.paisabatao.in/home-loan-emi-calculator" },
 };
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Home Loan EMI Calculator",
-  url: "https://paisabatao.in/home-loan-emi-calculator",
+  url: "https://www.paisabatao.in/home-loan-emi-calculator",
   description: "Free home loan EMI calculator. Calculate monthly EMI for housing loans at any interest rate with amortization schedule.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any",
   offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
-  creator: { "@type": "Organization", name: "PaisaBatao", url: "https://paisabatao.in" },
+  creator: { "@type": "Organization", name: "PaisaBatao", url: "https://www.paisabatao.in" },
 };
 
 export default function HomeLoanEMIPage() {

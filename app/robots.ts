@@ -1,4 +1,4 @@
-import { MetadataRoute } from "next";
+﻿import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,10 +6,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
+        disallow: ["/api/"],
       },
     ],
-    sitemap: "https://paisabatao.in/sitemap.xml",
-    host: "https://paisabatao.in",
+    sitemap: "https://www.paisabatao.in/sitemap.xml",
+    host: "https://www.paisabatao.in",
   };
 }
