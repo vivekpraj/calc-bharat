@@ -63,14 +63,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <DisclaimerModal />
         {/* Google Analytics 4 — lazyOnload */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-H94EZKKS93"
           strategy="lazyOnload"
         />
         <Script id="ga4" strategy="lazyOnload">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-XXXXXXXXXX');
+          gtag('config', 'G-H94EZKKS93');
         `}</Script>
       </body>
     </html>
